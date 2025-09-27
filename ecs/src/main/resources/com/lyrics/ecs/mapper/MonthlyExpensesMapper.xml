@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyrics.ecs.mapper.MonthlyExpensesMapper">
+
+    <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.MonthlyExpensesPo"
+            parameterType="com.lyrics.ecs.bean.req.MonthlyExpensesReq">
+            SELECT * FROM monthly_expenses
+            <where>
+                <if test="year != null">
+                    AND year = #{year}
+                </if>
+
+                <if test="month != null">
+                    AND month = #{month}
+                </if>
+
+                <if test="monthlyTotal != null">
+                    AND monthly_total LIKE CONCAT('%', #{monthlyTotal}, '%')
+                </if>
+
+                <if test="key != null and key != ''">
+                    AND (
+                    year LIKE CONCAT('%', #{key}, '%')  -- 年份模糊匹配key
+                    OR month LIKE CONCAT('%', #{key}, '%')  -- 月份模糊匹配key
+                    OR monthly_total LIKE CONCAT('%', #{key}, '%')  -- 金额模糊匹配key
+                    )
+                </if>
+            </where>
+            ORDER BY year DESC, month DESC
+
+    </select>
+</mapper>

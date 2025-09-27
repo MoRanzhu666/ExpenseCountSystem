@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyrics.ecs.mapper.DailyExpensesMapper">
+
+
+    <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.DailyExpensesPo"
+            parameterType="com.lyrics.ecs.bean.req.DailyExpensesReq">
+        SELECT * FROM daily_expenses
+        <where>
+            <!-- 基础条件：精确匹配或单独模糊查询（均从condition对象获取参数） -->
+            <if test="condition.year != null">
+                AND year = #{condition.year}
+            </if>
+            <if test="condition.month != null">
+                AND month = #{condition.month}
+            </if>
+            <if test="condition.day != null">
+                AND day = #{condition.day}
+            </if>
+            <!-- 金额类字段单独查询时用模糊匹配 -->
+            <if test="condition.singleExpense != null">
+                AND single_expense LIKE CONCAT('%', #{condition.singleExpense}, '%')
+            </if>
+            <if test="condition.expenseReason != null and condition.expenseReason != ''">
+                AND expense_reason LIKE CONCAT('%', #{condition.expenseReason}, '%')
+            </if>
+            <if test="condition.expenseContent != null and condition.expenseContent != ''">
+                AND expense_content LIKE CONCAT('%', #{condition.expenseContent}, '%')
+            </if>
+            <if test="condition.dailyTotal != null">
+                AND daily_total LIKE CONCAT('%', #{condition.dailyTotal}, '%')
+            </if>
+
+            <!-- 关键逻辑：key不为空时，所有字段联合模糊查询（OR关系） -->
+            <if test="condition.key != null and condition.key != ''">
+                AND (
+                year LIKE CONCAT('%', #{condition.key}, '%')  <!-- 年份模糊匹配 -->
+                OR month LIKE CONCAT('%', #{condition.key}, '%')  <!-- 月份模糊匹配 -->
+                OR day LIKE CONCAT('%', #{condition.key}, '%')  <!-- 日期模糊匹配 -->
+                OR single_expense LIKE CONCAT('%', #{condition.key}, '%')  <!-- 单次金额模糊匹配 -->
+                OR expense_reason LIKE CONCAT('%', #{condition.key}, '%')  <!-- 花销原因模糊匹配 -->
+                OR expense_content LIKE CONCAT('%', #{condition.key}, '%')  <!-- 花销内容模糊匹配 -->
+                OR daily_total LIKE CONCAT('%', #{condition.key}, '%')  <!-- 当日合计模糊匹配 -->
+                )
+            </if>
+        </where>
+        ORDER BY year DESC, month DESC, day DESC
+    </select>
+</mapper>

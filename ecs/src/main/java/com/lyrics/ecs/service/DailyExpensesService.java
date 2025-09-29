@@ -8,12 +8,16 @@ import com.lyrics.ecs.bean.po.YearlyExpensesPo;
 import com.lyrics.ecs.bean.req.DailyExpensesReq;
 import com.lyrics.ecs.bean.req.MonthlyExpensesReq;
 import com.lyrics.ecs.bean.req.YearlyExpensesReq;
+import com.lyrics.ecs.bean.resp.DailyExpensesResp;
 import com.lyrics.ecs.mapper.DailyExpensesMapper;
 import com.lyrics.ecs.utils.ObjectUtils;
+import jakarta.validation.Valid;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -35,7 +39,7 @@ public class DailyExpensesService {
         dailyExpensesPo.generateCreateInfo();
         dailyExpensesPo.generateUpdateInfo();
         dailyExpensesMapper.insert(dailyExpensesPo);
-        this.insertAfter(dailyExpensesPo);
+        this.operationDataAfter(dailyExpensesPo);
     }
 
 
@@ -49,8 +53,21 @@ public class DailyExpensesService {
         return dailyExpensesMapper.selectByCondition(dcondition);
     }
 
+    public DailyExpensesPo selectById(String id) {
+        return dailyExpensesMapper.selectById(id);
+    }
 
-    public void insertAfter(DailyExpensesPo dailyExpensesPo) {
+    public void update( DailyExpensesPo dp) {
+        if (ObjectUtils.isEmpty(dp)) {
+            throw new BadRequestException("参数校验失败");
+        }
+        dp.generateUpdateInfo();
+        dailyExpensesMapper.updateById(dp);
+        operationDataAfter(dp);
+    }
+
+
+    public void operationDataAfter(DailyExpensesPo dailyExpensesPo) {
         DailyExpensesPo operationParam = processDaily(dailyExpensesPo);
 
         processMonthly(operationParam);
@@ -120,5 +137,30 @@ public class DailyExpensesService {
 
         yearlyExpensesServiec.save(yearlyExpensesPo);
 
+    }
+
+    public IPage<DailyExpensesResp> getPage( DailyExpensesReq req) {
+        DailyExpensesResp result = new DailyExpensesResp();
+
+        if(ObjectUtils.isEmpty(req)) { req = new DailyExpensesReq(); }
+        if(ObjectUtils.isEmpty(req.getId())){
+            BeanUtils.copyProperties(selectByCondition(req), result);
+        }else{
+            DailyExpensesResp dailyExpensesResp = new DailyExpensesResp();
+            List<DailyExpensesResp> dailyExpensesResps = new ArrayList<>();
+            BeanUtils.copyProperties( selectById(req.getId()), dailyExpensesResp);
+            dailyExpensesResps.add(dailyExpensesResp);
+
+            result.setRecords(dailyExpensesResps);
+        }
+
+        return result;
+    }
+
+
+    public void deleteById(String id) {
+        DailyExpensesPo dailyExpensesPo = this.selectById(id);
+        dailyExpensesMapper.deleteById(id);
+        operationDataAfter(dailyExpensesPo);
     }
 }

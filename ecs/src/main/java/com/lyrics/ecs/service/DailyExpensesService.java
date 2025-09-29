@@ -144,17 +144,19 @@ public class DailyExpensesService {
 
         if(ObjectUtils.isEmpty(req)) { req = new DailyExpensesReq(); }
         if(ObjectUtils.isEmpty(req.getId())){
-            BeanUtils.copyProperties(selectByCondition(req), result);
+            return selectRespByCondition(req);
         }else{
-            DailyExpensesResp dailyExpensesResp = new DailyExpensesResp();
-            List<DailyExpensesResp> dailyExpensesResps = new ArrayList<>();
-            BeanUtils.copyProperties( selectById(req.getId()), dailyExpensesResp);
-            dailyExpensesResps.add(dailyExpensesResp);
-
-            result.setRecords(dailyExpensesResps);
+            return selectRespById(req.getId());
         }
 
-        return result;
+    }
+
+    private IPage<DailyExpensesResp> selectRespById(String id) {
+        return dailyExpensesMapper.selectRespById(id);
+    }
+
+    private IPage<DailyExpensesResp> selectRespByCondition(DailyExpensesReq req) {
+        return dailyExpensesMapper.selectRespByCondition(req);
     }
 
 

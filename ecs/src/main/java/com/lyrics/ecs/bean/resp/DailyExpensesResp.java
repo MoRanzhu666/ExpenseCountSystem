@@ -33,9 +33,13 @@ public class DailyExpensesResp extends CustomIPage<DailyExpensesResp> {
 
     private String createBy;
 
+    private String createByName;
+
     private LocalDateTime createTime;
 
     private String updateBy;
+
+    private String updateByName;
 
     private LocalDateTime updateTime;
 

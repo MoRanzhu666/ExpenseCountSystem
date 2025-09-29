@@ -10,9 +10,9 @@ import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface DailyExpensesMapper extends BaseMapper<DailyExpensesPo> {
-     IPage<DailyExpensesPo> selectByCondition(@Param("condition") DailyExpensesReq dcondition);
+    IPage<DailyExpensesPo> selectByCondition(@Param("condition") DailyExpensesReq dcondition);
 
-     IPage<DailyExpensesResp> selectRespByCondition(@Param("condition") DailyExpensesReq req);
+    IPage<DailyExpensesResp> selectRespByCondition(@Param("condition") DailyExpensesReq req);
 
-     IPage<DailyExpensesResp> selectRespById(String id);
+    IPage<DailyExpensesResp> selectRespById(String id);
 }

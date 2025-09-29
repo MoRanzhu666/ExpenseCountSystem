@@ -14,5 +14,5 @@ create table monthly_expenses
 )
     comment '用户月度花销汇总表';
 
-INSERT INTO expense_records.monthly_expenses (id, year, month, monthly_total, create_by, create_time, update_by, update_time) VALUES ('46', 2025, 8, 119.27, null, '2025-09-27 22:10:20', null, '2025-09-27 22:10:20');
-INSERT INTO expense_records.monthly_expenses (id, year, month, monthly_total, create_by, create_time, update_by, update_time) VALUES ('47', 2025, 9, 1916.91, null, '2025-09-27 22:10:20', null, '2025-09-27 22:10:20');
+INSERT INTO expense_records.monthly_expenses (id, year, month, monthly_total, create_by, create_time, update_by, update_time) VALUES ('46', 2025, 8, 119.27, '1', '2025-09-27 22:10:20', '1', '2025-09-29 20:32:49');
+INSERT INTO expense_records.monthly_expenses (id, year, month, monthly_total, create_by, create_time, update_by, update_time) VALUES ('47', 2025, 9, 2245.91, '1', '2025-09-27 22:10:20', '1', '2025-09-29 20:32:49');

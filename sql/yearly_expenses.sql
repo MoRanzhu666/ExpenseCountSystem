@@ -11,4 +11,4 @@ create table yearly_expenses
 )
     comment '用户年度花销汇总表';
 
-INSERT INTO expense_records.yearly_expenses (id, year, yearly_total, create_by, create_time, update_by, update_time) VALUES ('1', 2025, 2036.18, null, '2025-09-27 22:10:20', null, '2025-09-27 22:10:20');
+INSERT INTO expense_records.yearly_expenses (id, year, yearly_total, create_by, create_time, update_by, update_time) VALUES ('1', 2025, 2365.18, '1', '2025-09-29 20:32:56', '1', '2025-09-29 20:33:09');

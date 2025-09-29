@@ -54,7 +54,6 @@
         left join users u on u.id=de.create_by
         left join users u2 on u2.id=de.update_by
         <where>
-            <!-- 基础条件：精确匹配或单独模糊查询（均从condition对象获取参数） -->
             <if test="condition.year != null">
                 AND year = #{condition.year}
             </if>
@@ -64,7 +63,6 @@
             <if test="condition.day != null">
                 AND day = #{condition.day}
             </if>
-            <!-- 金额类字段单独查询时用模糊匹配 -->
             <if test="condition.singleExpense != null">
                 AND single_expense LIKE CONCAT('%', #{condition.singleExpense}, '%')
             </if>
@@ -78,7 +76,6 @@
                 AND daily_total LIKE CONCAT('%', #{condition.dailyTotal}, '%')
             </if>
 
-            <!-- 关键逻辑：key不为空时，所有字段联合模糊查询（OR关系） -->
             <if test="condition.key != null and condition.key != ''">
                 AND (
                 year LIKE CONCAT('%', #{condition.key}, '%')  <!-- 年份模糊匹配 -->

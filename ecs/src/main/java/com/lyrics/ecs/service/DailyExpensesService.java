@@ -57,7 +57,7 @@ public class DailyExpensesService {
         return dailyExpensesMapper.selectById(id);
     }
 
-    public void update( DailyExpensesPo dp) {
+    public void update(DailyExpensesPo dp) {
         if (ObjectUtils.isEmpty(dp)) {
             throw new BadRequestException("参数校验失败");
         }
@@ -110,9 +110,9 @@ public class DailyExpensesService {
         MonthlyExpensesPo monthlyExpensesPo = !mipage.getRecords().isEmpty() ? mipage.getRecords().get(0) : new MonthlyExpensesPo();
 
         // 计算月合计 此时的日总和已经是统计完毕无误的
-        if(ObjectUtils.isEmpty(monthlyExpensesPo)) {
-            monthlyExpensesPo.setMonthlyTotal(dailyExpensesPo.getSingleExpense() );
-        }else{
+        if (ObjectUtils.isEmpty(monthlyExpensesPo)) {
+            monthlyExpensesPo.setMonthlyTotal(dailyExpensesPo.getSingleExpense());
+        } else {
             monthlyExpensesPo.setMonthlyTotal(dailyExpensesPo.getSingleExpense() + monthlyExpensesPo.getMonthlyTotal());
         }
 
@@ -129,9 +129,9 @@ public class DailyExpensesService {
 
         YearlyExpensesPo yearlyExpensesPo = !yipage.getRecords().isEmpty() ? yipage.getRecords().get(0) : new YearlyExpensesPo();
 
-        if(ObjectUtils.isEmpty(yearlyExpensesPo)) {
-            yearlyExpensesPo.setYearlyTotal(yearlyExpensesPo.getYearlyTotal() );
-        }else{
+        if (ObjectUtils.isEmpty(yearlyExpensesPo)) {
+            yearlyExpensesPo.setYearlyTotal(yearlyExpensesPo.getYearlyTotal());
+        } else {
             yearlyExpensesPo.setYearlyTotal(yearlyExpensesPo.getYearlyTotal() + dailyExpensesPo.getSingleExpense());
         }
 
@@ -139,13 +139,13 @@ public class DailyExpensesService {
 
     }
 
-    public IPage<DailyExpensesResp> getPage( DailyExpensesReq req) {
-        DailyExpensesResp result = new DailyExpensesResp();
-
-        if(ObjectUtils.isEmpty(req)) { req = new DailyExpensesReq(); }
-        if(ObjectUtils.isEmpty(req.getId())){
+    public IPage<DailyExpensesResp> getPage(DailyExpensesReq req) {
+        if (ObjectUtils.isEmpty(req)) {
+            req = new DailyExpensesReq();
+        }
+        if (ObjectUtils.isEmpty(req.getId())) {
             return selectRespByCondition(req);
-        }else{
+        } else {
             return selectRespById(req.getId());
         }
 

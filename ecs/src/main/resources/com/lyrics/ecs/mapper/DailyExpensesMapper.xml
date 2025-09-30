@@ -88,7 +88,7 @@
                 )
             </if>
         </where>
-        ORDER BY year DESC, month DESC, day DESC
+        ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc
     </select>
     <select id="selectRespById" resultType="com.lyrics.ecs.bean.resp.DailyExpensesResp"
             parameterType="java.lang.String">

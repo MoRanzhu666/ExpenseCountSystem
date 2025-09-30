@@ -5,13 +5,18 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
+import com.lyrics.ecs.utils.LocalDateDeserializer;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * 用户每日花销明细表实体类
@@ -33,12 +38,15 @@ public class DailyExpensesResp implements Serializable {
     private Integer day;
 
     @JsonProperty("singleExpense")
+    @NotNull
     private Double singleExpense;
 
     @JsonProperty("expenseReason")
+    @NotNull
     private String expenseReason;
 
     @JsonProperty("expenseContent")
+    @NotNull
     private String expenseContent;
 
     @JsonProperty("dailyTotal")
@@ -71,4 +79,9 @@ public class DailyExpensesResp implements Serializable {
     @JsonDeserialize(using = LocalDateTimeDeserializer.class)
     private LocalDateTime updateTime;
 
+    @JsonProperty("date")
+    @NotNull
+    @JsonSerialize(using = LocalDateSerializer.class)
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    private LocalDate date;
 }

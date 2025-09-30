@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * 用户每日花销明细表实体类
@@ -41,6 +42,8 @@ public class DailyExpensesReq extends CustomIPage<DailyExpensesPo> {
     private String updateBy;
 
     private LocalDateTime updateTime;
+
+    private List<String> ids;
 
 }
     

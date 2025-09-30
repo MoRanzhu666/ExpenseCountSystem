@@ -20,13 +20,13 @@ public class DailyExpensesController {
     private DailyExpensesService dailyExpensesService;
 
     @PostMapping("/add")
-    public ResultPo<String> addDailyExpenses(@RequestBody(required = false) @Valid DailyExpensesPo dp){
+    public ResultPo<String> addDailyExpenses(@RequestBody(required = false) @Valid DailyExpensesResp dp){
         dailyExpensesService.add(dp);
         return ResultPo.success();
     }
 
     @PutMapping("/update")
-    public ResultPo<String> updateDailyExpenses(@RequestBody @Valid DailyExpensesPo dp){
+    public ResultPo<String> updateDailyExpenses(@RequestBody @Valid DailyExpensesResp dp){
         dailyExpensesService.update(dp);
         return ResultPo.success();
     }
@@ -45,6 +45,13 @@ public class DailyExpensesController {
     @DeleteMapping("/deleteById")
     public ResultPo<String> deleteById( DailyExpensesReq req){
         dailyExpensesService.deleteById(req.getId());
+
+        return ResultPo.success();
+    }
+
+    @DeleteMapping("/deleteByIds")
+    public ResultPo<String> deleteByIds( DailyExpensesReq req){
+        dailyExpensesService.deleteByIds(req.getIds());
 
         return ResultPo.success();
     }

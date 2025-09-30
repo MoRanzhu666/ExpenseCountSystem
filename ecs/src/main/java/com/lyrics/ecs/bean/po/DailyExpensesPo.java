@@ -8,6 +8,7 @@ import lombok.EqualsAndHashCode;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * 用户每日花销明细表实体类
@@ -17,22 +18,16 @@ import java.time.LocalDateTime;
 @TableName("daily_expenses")
 public class DailyExpensesPo extends BasePo {
 
-    @NotNull
     private Integer year;
 
-    @NotNull
     private Integer month;
 
-    @NotNull
     private Integer day;
 
-    @NotNull
     private Double singleExpense;
 
-    @NotNull
     private String expenseReason;
 
-    @NotNull
     private String expenseContent;
 
     private Double dailyTotal;

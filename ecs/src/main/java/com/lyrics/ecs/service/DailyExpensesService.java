@@ -17,7 +17,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -31,10 +33,17 @@ public class DailyExpensesService {
 
 
     @Transactional(rollbackFor = Exception.class)
-    public void add(DailyExpensesPo dailyExpensesPo) {
-        if (ObjectUtils.isEmpty(dailyExpensesPo)) {
+    public void add(DailyExpensesResp dailyExpensesResp) {
+        if (ObjectUtils.isEmpty(dailyExpensesResp)) {
             throw new BadRequestException("参数校验失败");
         }
+        DailyExpensesPo dailyExpensesPo = new DailyExpensesPo();
+        BeanUtils.copyProperties(dailyExpensesResp, dailyExpensesPo);
+        LocalDate date = dailyExpensesResp.getDate();
+        dailyExpensesPo.setYear(date.getYear());
+        dailyExpensesPo.setMonth(date.getMonthValue());
+        dailyExpensesPo.setDay(date.getDayOfMonth());
+        dailyExpensesPo.setDailyTotal(0.0);
 
         dailyExpensesPo.generateCreateInfo();
         dailyExpensesPo.generateUpdateInfo();
@@ -42,7 +51,7 @@ public class DailyExpensesService {
         this.operationDataAfter(dailyExpensesPo);
     }
 
-
+    @Transactional(rollbackFor = Exception.class)
     public void batchUpdateById(List<DailyExpensesPo> dailyExpensesPoList) {
         dailyExpensesPoList.forEach(dailyExpensesPo -> {
             dailyExpensesMapper.updateById(dailyExpensesPo);
@@ -57,16 +66,24 @@ public class DailyExpensesService {
         return dailyExpensesMapper.selectById(id);
     }
 
-    public void update(DailyExpensesPo dp) {
-        if (ObjectUtils.isEmpty(dp)) {
+    @Transactional(rollbackFor = Exception.class)
+    public void update(DailyExpensesResp dailyExpensesResp) {
+        if (ObjectUtils.isEmpty(dailyExpensesResp)) {
             throw new BadRequestException("参数校验失败");
         }
-        dp.generateUpdateInfo();
-        dailyExpensesMapper.updateById(dp);
-        operationDataAfter(dp);
+        DailyExpensesPo dailyExpensesPo = new DailyExpensesPo();
+        BeanUtils.copyProperties(dailyExpensesResp, dailyExpensesPo);
+        LocalDate date = dailyExpensesResp.getDate();
+        dailyExpensesPo.setYear(date.getYear());
+        dailyExpensesPo.setMonth(date.getMonthValue());
+        dailyExpensesPo.setDay(date.getDayOfMonth());
+
+        dailyExpensesPo.generateUpdateInfo();
+        dailyExpensesMapper.updateById(dailyExpensesPo);
+        operationDataAfter(dailyExpensesPo);
     }
 
-
+    @Transactional(rollbackFor = Exception.class)
     public void operationDataAfter(DailyExpensesPo dailyExpensesPo) {
         DailyExpensesPo operationParam = processDaily(dailyExpensesPo);
 
@@ -106,16 +123,26 @@ public class DailyExpensesService {
         mcondition.setMonth(dailyExpensesPo.getMonth());
         mcondition.setYear(dailyExpensesPo.getYear());
         IPage<MonthlyExpensesPo> mipage = monthlyExpensesService.selectByCondition(mcondition);
-
         MonthlyExpensesPo monthlyExpensesPo = !mipage.getRecords().isEmpty() ? mipage.getRecords().get(0) : new MonthlyExpensesPo();
+
+        DailyExpensesReq condition = new DailyExpensesReq();
+        condition.setYear(dailyExpensesPo.getYear());
+        condition.setMonth(dailyExpensesPo.getMonth());
+        condition.setSize(Long.MAX_VALUE);
+        IPage<DailyExpensesPo> dmipage = this.selectByCondition(condition);
 
         // 计算月合计 此时的日总和已经是统计完毕无误的
         if (ObjectUtils.isEmpty(monthlyExpensesPo)) {
             monthlyExpensesPo.setMonthlyTotal(dailyExpensesPo.getSingleExpense());
+            monthlyExpensesPo.setYear(dailyExpensesPo.getYear());
+            monthlyExpensesPo.setMonth(dailyExpensesPo.getMonth());
         } else {
-            monthlyExpensesPo.setMonthlyTotal(dailyExpensesPo.getSingleExpense() + monthlyExpensesPo.getMonthlyTotal());
+            Double total = 0.0;
+            for (DailyExpensesPo dpo : dmipage.getRecords()) {
+                total += dpo.getSingleExpense();
+            }
+            monthlyExpensesPo.setMonthlyTotal(total);
         }
-
 
         // 更新月合计
         monthlyExpensesService.save(monthlyExpensesPo);
@@ -126,13 +153,22 @@ public class DailyExpensesService {
         YearlyExpensesReq ycondition = new YearlyExpensesReq();
         ycondition.setYear(dailyExpensesPo.getYear());
         IPage<YearlyExpensesPo> yipage = yearlyExpensesServiec.selectByCondition(ycondition);
-
         YearlyExpensesPo yearlyExpensesPo = !yipage.getRecords().isEmpty() ? yipage.getRecords().get(0) : new YearlyExpensesPo();
+
+        DailyExpensesReq condition = new DailyExpensesReq();
+        condition.setYear(dailyExpensesPo.getYear());
+        condition.setSize(Long.MAX_VALUE);
+        IPage<DailyExpensesPo> dyipage = this.selectByCondition(condition);
 
         if (ObjectUtils.isEmpty(yearlyExpensesPo)) {
             yearlyExpensesPo.setYearlyTotal(yearlyExpensesPo.getYearlyTotal());
+            yearlyExpensesPo.setYear(dailyExpensesPo.getYear());
         } else {
-            yearlyExpensesPo.setYearlyTotal(yearlyExpensesPo.getYearlyTotal() + dailyExpensesPo.getSingleExpense());
+            Double total = 0.0;
+            for (DailyExpensesPo dpo : dyipage.getRecords()) {
+                total += dpo.getSingleExpense();
+            }
+            yearlyExpensesPo.setYearlyTotal(total);
         }
 
         yearlyExpensesServiec.save(yearlyExpensesPo);
@@ -159,10 +195,21 @@ public class DailyExpensesService {
         return dailyExpensesMapper.selectRespByCondition(req);
     }
 
-
+    @Transactional(rollbackFor = Exception.class)
     public void deleteById(String id) {
         DailyExpensesPo dailyExpensesPo = this.selectById(id);
         dailyExpensesMapper.deleteById(id);
         operationDataAfter(dailyExpensesPo);
+    }
+
+    @Transactional(rollbackFor = Exception.class)
+    public void deleteByIds(List<String> ids) {
+        List<DailyExpensesPo> dailyExpensesPo = this.selectByIds(ids);
+        dailyExpensesMapper.deleteBatchIds(ids);
+        dailyExpensesPo.forEach(this::operationDataAfter);
+    }
+
+    private List<DailyExpensesPo> selectByIds(List<String> ids) {
+        return dailyExpensesMapper.selectBatchIds(ids);
     }
 }

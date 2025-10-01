@@ -3,6 +3,7 @@ package com.lyrics.ecs.bean.po;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.lyrics.ecs.bean.common.BasePo;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -13,7 +14,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @TableName("users") // 指定对应的数据库表名
-public class UsersPo {
+public class UsersPo extends BasePo {
 
     /**
      * 主键ID
@@ -30,26 +31,6 @@ public class UsersPo {
      * 角色
      */
     private String role;
-
-    /**
-     * 创建人
-     */
-    private String createBy;
-
-    /**
-     * 创建时间
-     */
-    private LocalDateTime createTime;
-
-    /**
-     * 更新人
-     */
-    private String updateBy;
-
-    /**
-     * 更新时间
-     */
-    private LocalDateTime updateTime;
 
     /**
      * 密码

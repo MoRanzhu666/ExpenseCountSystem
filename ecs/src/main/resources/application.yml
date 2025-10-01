@@ -50,3 +50,19 @@ spring:
     password: 123456
 #    password: root
 
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379             # Redis 端口
+      password: 123456       # 如果 redis.conf 配置了 requirepass，就填这里
+      database: 0            # 默认数据库，0-15
+      timeout: 5000          # 连接超时时间（毫秒）
+
+      lettuce:
+        pool:
+          max-active: 8      # 最大连接数
+          max-idle: 8        # 最大空闲连接
+          min-idle: 0        # 最小空闲连接
+          max-wait: -1ms     # 最大等待时间
+
+

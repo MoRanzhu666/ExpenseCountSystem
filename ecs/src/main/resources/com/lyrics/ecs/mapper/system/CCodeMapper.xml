@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyrics.ecs.mapper.system.CCodeMapper">
+
+
+    <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.system.CCodePo">
+            SELECT *
+            FROM c_code
+            <where>
+                <!-- category等值查询 -->
+                <if test="condition.category != null and condition.category != ''">
+                    AND category = #{condition.category}
+                </if>
+
+                <!-- code等值查询 -->
+                <if test="condition.code != null and condition.code != ''">
+                    AND code = #{code}
+                </if>
+
+                <!-- describe等值查询 -->
+                <if test="condition.describe != null and condition.describe != ''">
+                    AND `describe` = #{condition.describe}
+                </if>
+
+                <!-- key模糊查询，同时匹配category、code、describe三个字段 -->
+                <if test="condition.key != null and condition.key != ''">
+                    AND (
+                    category LIKE CONCAT('%', #{condition.key}, '%')
+                    OR code LIKE CONCAT('%', #{condition.key}, '%')
+                    OR `describe` LIKE CONCAT('%', #{condition.key}, '%')
+                    )
+                </if>
+            </where>
+
+    </select>
+</mapper>

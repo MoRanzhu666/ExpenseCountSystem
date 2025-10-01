@@ -23,6 +23,18 @@ public class AuthFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        System.out.println(">>> Request " + request.getMethod() + " " + request.getRequestURI());
+
+        response.setHeader("Access-Control-Allow-Origin", "http://localhost:6190");
+        response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+        response.setHeader("Access-Control-Allow-Headers", "token, Content-Type, Accept");
+        response.setHeader("Access-Control-Allow-Credentials", "true");
+        // 0. 放行option
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            response.setStatus(HttpServletResponse.SC_OK);
+            return; // 不进入后续 token 校验
+        }
+
         // 1. 排除不需要验证的路径（如登录、注册接口）
         String path = request.getRequestURI();
         if (path.contains("/login") || path.contains("/register")) {
@@ -32,17 +44,12 @@ public class AuthFilter extends OncePerRequestFilter {
 
 
         try {
-            Enumeration<String> headerNames = request.getHeaderNames();
-            while (headerNames.hasMoreElements()) {
-                String headerName = headerNames.nextElement();
-                System.out.println(headerName);
-            }
             String token = request.getHeader("token");
             if (ObjectUtils.isEmpty(token) || ObjectUtils.isEmpty(authService.verifyToken(token))) {
                 throw new AuthException("Unauthorized");
             }
 
-            doFilter(request, response, filterChain);
+            filterChain.doFilter(request, response);
 
             System.out.println(token);
         } catch (AuthException e) {

@@ -11,13 +11,13 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // 对所有接口生效
                 // 允许前端域名（Spring Boot 2.4+ 推荐用allowedOriginPatterns，支持通配符且兼容credentials）
-                .allowedOriginPatterns("http://localhost:6190")
+                .allowedOriginPatterns("*")
                 // 明确允许OPTIONS方法（预检请求必须）
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedMethods("*")
                 // 允许的请求头，必须包含自定义的token
-                .allowedHeaders("token", "Content-Type", "Accept")
+                .allowedHeaders("*")
                 // 允许前端获取的响应头（可选，按需添加）
-                .exposedHeaders("token", "Content-Disposition")
+                .exposedHeaders("*")
                 // 允许携带Cookie（必须为true，否则token等认证信息可能被浏览器拦截）
                 .allowCredentials(true)
                 // 预检请求缓存时间（秒），减少重复预检

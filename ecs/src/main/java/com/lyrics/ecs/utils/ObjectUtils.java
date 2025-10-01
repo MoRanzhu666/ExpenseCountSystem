@@ -1,10 +1,16 @@
 package com.lyrics.ecs.utils;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.lyrics.ecs.bean.po.system.CCodePo;
+import com.lyrics.ecs.bean.resp.system.CCodeResp;
+import org.springframework.beans.BeanUtils;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 
 public class ObjectUtils {
 

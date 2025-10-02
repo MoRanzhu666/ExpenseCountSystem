@@ -3,6 +3,29 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lyrics.ecs.mapper.system.CCodeMapper">
+    <insert id="insertInfo">
+        INSERT INTO c_code ( id, category, code, `describe`, create_by, create_time, update_by, update_time )
+        VALUES ( #{id},
+        <if test="category==null or category==''">
+            'CATEGORY',
+        </if>
+        <if test="category!=null and category!=''">
+            #{category},
+        </if>
+        #{code},#{describe},#{createBy},#{createTime},#{updateBy},#{updateTime} )
+    </insert>
+    <update id="updateInfoById">
+        UPDATE c_code
+        SET
+        <if test="category != null">category = #{category},</if>
+        <if test="code != null">code = #{code},</if>
+        <if test="describe != null">`describe` = #{describe},</if>  <!-- 保留字转义 -->
+        <if test="updateBy != null">update_by = #{updateBy},</if>
+        <if test="updateTime != null">update_time = #{updateTime}</if>  <!-- 最后一个字段不加逗号 -->
+        WHERE
+        id = #{id}  <!-- 必传主键，确保更新范围 -->
+
+    </update>
 
 
     <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.system.CCodePo">
@@ -34,5 +57,20 @@
                 </if>
             </where>
 
+            order by update_time desc
+
+    </select>
+    <select id="selectCategorySelector" resultType="com.lyrics.ecs.bean.resp.system.CCodeResp">
+        select * from c_code
+        <where>
+            <if test="category!=null and category!=''">
+                category=#{category}
+            </if>
+            <if test="category==null or category==''">
+                category='category'
+            </if>
+        </where>
+
+        order by update_time desc
     </select>
 </mapper>

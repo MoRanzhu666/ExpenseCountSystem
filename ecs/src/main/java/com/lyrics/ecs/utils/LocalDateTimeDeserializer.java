@@ -14,6 +14,10 @@ public class LocalDateTimeDeserializer extends JsonDeserializer<LocalDateTime> {
     public LocalDateTime deserialize(JsonParser p, DeserializationContext ctxt) throws IOException {
         // 将 JSON 字符串转换为 LocalDateTime
         String dateStr = p.getValueAsString();
+        if(ObjectUtils.isEmpty(dateStr)){
+            return null;
+        }
+
         return LocalDateTime.parse(dateStr, FORMATTER);
     }
 }

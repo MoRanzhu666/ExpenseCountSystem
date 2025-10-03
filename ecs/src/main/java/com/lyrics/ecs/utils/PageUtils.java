@@ -37,4 +37,22 @@ public class PageUtils {
         targetPage.setRecords(targetRecords);
         return targetPage;
     }
+
+    public static <S, T> IPage<T> convertPage(IPage<S> sourcePage, Class<T> targetClass) {
+        // 创建新的分页对象
+        IPage<T> targetPage = new Page<>(sourcePage.getCurrent(), sourcePage.getSize(), sourcePage.getTotal());
+
+        List<T> targetRecords = sourcePage.getRecords().stream().map(record -> {
+            try {
+                T target = targetClass.getDeclaredConstructor().newInstance();
+                BeanUtils.copyProperties(record, target);
+                return target;
+            } catch (Exception e) {
+                throw new RuntimeException("转换失败", e);
+            }
+        }).collect(Collectors.toList());
+
+        targetPage.setRecords(targetRecords);
+        return targetPage;
+    }
 }

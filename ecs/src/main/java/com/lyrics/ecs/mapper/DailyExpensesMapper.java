@@ -2,9 +2,9 @@ package com.lyrics.ecs.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.lyrics.ecs.bean.po.DailyExpensesPo;
-import com.lyrics.ecs.bean.req.DailyExpensesReq;
-import com.lyrics.ecs.bean.resp.DailyExpensesResp;
+import com.lyrics.ecs.bean.po.expense.DailyExpensesPo;
+import com.lyrics.ecs.bean.req.expense.DailyExpensesReq;
+import com.lyrics.ecs.bean.resp.expense.DailyExpensesResp;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

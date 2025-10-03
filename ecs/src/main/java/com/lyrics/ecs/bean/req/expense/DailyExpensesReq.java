@@ -1,9 +1,7 @@
-package com.lyrics.ecs.bean.req;
+package com.lyrics.ecs.bean.req.expense;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.lyrics.ecs.bean.common.CustomIPage;
-import com.lyrics.ecs.bean.common.BasePo;
-import com.lyrics.ecs.bean.po.DailyExpensesPo;
+import com.lyrics.ecs.bean.po.expense.DailyExpensesPo;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

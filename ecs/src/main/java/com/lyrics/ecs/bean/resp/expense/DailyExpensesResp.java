@@ -1,4 +1,4 @@
-package com.lyrics.ecs.bean.resp;
+package com.lyrics.ecs.bean.resp.expense;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -16,7 +16,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 /**
  * 用户每日花销明细表实体类

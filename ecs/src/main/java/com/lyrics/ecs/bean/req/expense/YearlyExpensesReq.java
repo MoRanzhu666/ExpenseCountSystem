@@ -1,8 +1,7 @@
-package com.lyrics.ecs.bean.req;
+package com.lyrics.ecs.bean.req.expense;
 
 import com.lyrics.ecs.bean.common.CustomIPage;
-import com.lyrics.ecs.bean.common.BasePo;
-import com.lyrics.ecs.bean.po.MonthlyExpensesPo;
+import com.lyrics.ecs.bean.po.expense.YearlyExpensesPo;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -10,21 +9,17 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * 用户月度花销汇总表实体类
+ * 用户年度花销汇总表实体类
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class MonthlyExpensesReq extends CustomIPage<MonthlyExpensesPo> {
-
-    private Integer monthlyId;
+public class YearlyExpensesReq extends CustomIPage<YearlyExpensesPo> {
 
     private Integer year;
 
-    private Integer month;
+    private Double yearlyTotal;
 
-    private Double monthlyTotal;
-
-    private List<DailyExpensesReq> dailyExpenses;
+    private List<MonthlyExpensesReq> monthlyExpenses;
 
     private String key;
 
@@ -37,6 +32,5 @@ public class MonthlyExpensesReq extends CustomIPage<MonthlyExpensesPo> {
     private String updateBy;
 
     private LocalDateTime updateTime;
-
 }
     

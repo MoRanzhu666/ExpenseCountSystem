@@ -20,7 +20,7 @@ public class CCodeController {
 
     @GetMapping("/getPage")
     public ResultPo<CCodeResp> getPage(CCodeReq cCodeReq) {
-        return ResultPo.success( cCodeService.getPage(cCodeReq), "查询成功");
+        return ResultPo.success( cCodeService.getPage(cCodeReq));
     }
 
     @GetMapping("/categorySelector")

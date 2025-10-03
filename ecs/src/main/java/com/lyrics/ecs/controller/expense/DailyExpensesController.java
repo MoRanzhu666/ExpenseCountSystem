@@ -1,20 +1,17 @@
-package com.lyrics.ecs.controller;
+package com.lyrics.ecs.controller.expense;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.lyrics.ecs.bean.po.DailyExpensesPo;
+import com.lyrics.ecs.bean.po.expense.DailyExpensesPo;
 import com.lyrics.ecs.bean.po.ResultPo;
-import com.lyrics.ecs.bean.req.DailyExpensesReq;
-import com.lyrics.ecs.bean.resp.DailyExpensesResp;
-import com.lyrics.ecs.mapper.DailyExpensesMapper;
-import com.lyrics.ecs.service.DailyExpensesService;
+import com.lyrics.ecs.bean.req.expense.DailyExpensesReq;
+import com.lyrics.ecs.bean.resp.expense.DailyExpensesResp;
+import com.lyrics.ecs.service.expense.DailyExpensesService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraintvalidation.SupportedValidationTarget;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/dailyExpenses")
+@RequestMapping("/expense/dailyExpenses")
 public class DailyExpensesController {
     @Autowired
     private DailyExpensesService dailyExpensesService;

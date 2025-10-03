@@ -1,11 +1,9 @@
-package com.lyrics.ecs.bean.resp;
+package com.lyrics.ecs.bean.req.expense;
 
-import com.lyrics.ecs.bean.common.BasePo;
 import com.lyrics.ecs.bean.common.CustomIPage;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -14,7 +12,7 @@ import java.util.List;
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class MonthlyExpensesResp extends CustomIPage<MonthlyExpensesResp> {
+public class MonthlyExpensesReq extends CustomIPage<MonthlyExpensesReq> {
 
     private Integer monthlyId;
 
@@ -24,7 +22,9 @@ public class MonthlyExpensesResp extends CustomIPage<MonthlyExpensesResp> {
 
     private Double monthlyTotal;
 
-    private List<DailyExpensesResp> dailyExpenses;
+    private List<DailyExpensesReq> dailyExpenses;
+
+    private String key;
 
     private String id;
 
@@ -35,5 +35,6 @@ public class MonthlyExpensesResp extends CustomIPage<MonthlyExpensesResp> {
     private String updateBy;
 
     private LocalDateTime updateTime;
+
 }
     

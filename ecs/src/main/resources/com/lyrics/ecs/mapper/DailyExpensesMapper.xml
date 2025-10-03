@@ -5,8 +5,8 @@
 <mapper namespace="com.lyrics.ecs.mapper.DailyExpensesMapper">
 
 
-    <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.DailyExpensesPo"
-            parameterType="com.lyrics.ecs.bean.req.DailyExpensesReq">
+    <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.expense.DailyExpensesPo"
+            parameterType="com.lyrics.ecs.bean.req.expense.DailyExpensesReq">
         SELECT de.* FROM daily_expenses de
         <where>
             <!-- 基础条件：精确匹配或单独模糊查询（均从condition对象获取参数） -->
@@ -48,8 +48,8 @@
         </where>
         ORDER BY year DESC, month DESC, day DESC
     </select>
-    <select id="selectRespByCondition" resultType="com.lyrics.ecs.bean.resp.DailyExpensesResp"
-            parameterType="com.lyrics.ecs.bean.req.DailyExpensesReq">
+    <select id="selectRespByCondition" resultType="com.lyrics.ecs.bean.resp.expense.DailyExpensesResp"
+            parameterType="com.lyrics.ecs.bean.req.expense.DailyExpensesReq">
         SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de
         left join users u on u.id=de.create_by
         left join users u2 on u2.id=de.update_by
@@ -90,7 +90,7 @@
         </where>
         ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc
     </select>
-    <select id="selectRespById" resultType="com.lyrics.ecs.bean.resp.DailyExpensesResp"
+    <select id="selectRespById" resultType="com.lyrics.ecs.bean.resp.expense.DailyExpensesResp"
             parameterType="java.lang.String">
         SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de
         left join users u on u.id=de.create_by

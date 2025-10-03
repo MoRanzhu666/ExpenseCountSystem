@@ -1,26 +1,28 @@
-package com.lyrics.ecs.bean.resp;
+package com.lyrics.ecs.bean.resp.expense;
 
-import com.lyrics.ecs.bean.common.BasePo;
 import com.lyrics.ecs.bean.common.CustomIPage;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * 用户年度花销汇总表实体类
+ * 用户月度花销汇总表实体类
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class YearlyExpensesResp extends CustomIPage<YearlyExpensesResp> {
+public class MonthlyExpensesResp extends CustomIPage<MonthlyExpensesResp> {
+
+    private Integer monthlyId;
 
     private Integer year;
 
-    private Double yearlyTotal;
+    private Integer month;
 
-    private List<MonthlyExpensesResp> monthlyExpenses;
+    private Double monthlyTotal;
+
+    private List<DailyExpensesResp> dailyExpenses;
 
     private String id;
 
@@ -31,5 +33,9 @@ public class YearlyExpensesResp extends CustomIPage<YearlyExpensesResp> {
     private String updateBy;
 
     private LocalDateTime updateTime;
+
+    private String createByName;
+
+    private String updateByName;
 }
     

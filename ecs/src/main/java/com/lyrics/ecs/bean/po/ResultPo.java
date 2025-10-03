@@ -47,6 +47,16 @@ public class ResultPo<T> implements Serializable {
     }
 
     /**
+     * 成功返回（信息）
+     */
+    public static <T> ResultPo<T> success(String message) {
+        ResultPo<T> result = new ResultPo<>();
+        result.setMessage(message);
+        result.setCode(200);
+        return result;
+    }
+
+    /**
      * 成功返回（带数据）
      * @param data 业务数据
      */

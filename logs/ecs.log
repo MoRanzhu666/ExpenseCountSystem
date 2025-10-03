@@ -3204,3 +3204,329 @@ com.lyrics.ecs.controller.expense.MonthlyExpensesController#getPage(MonthlyExpen
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar:6.2.11]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar:6.2.11]
 	... 23 common frames omitted
+2025-10-03 12:53:37 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.16 with PID 19724 (E:\WorkSpace\ExpenseCountSystem\ecs\target\classes started by luoying in E:\WorkSpace\ExpenseCountSystem)
+2025-10-03 12:53:37 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-03 12:53:37 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-03 12:53:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-03 12:53:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-03 12:53:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-03 12:53:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-03 12:53:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2025-10-03 12:53:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-03 12:53:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-03 12:53:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-10-03 12:53:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-03 12:53:38 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-03 12:53:38 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-03 12:53:38 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-03 12:53:38 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1011 ms
+2025-10-03 12:53:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-03 12:53:39 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63350e8d
+2025-10-03 12:53:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-03 12:53:40 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-03 12:53:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-03 12:53:40 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.662 seconds (process running for 3.197)
+2025-10-03 12:53:48 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-03 12:53:48 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-03 12:53:48 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-03 12:53:48 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 10(Long)
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:53:49 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:40 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:54:41 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:34 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:35 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:55:56 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:00 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:04 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:05 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-03 12:56:05 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-03 12:56:05 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 10
+2025-10-03 12:56:05 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-03 12:56:05 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:56:05 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-03 12:56:05 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-03 12:56:05 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:56:05 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:07 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM c_code
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectByCondition - ==>  Preparing: SELECT * FROM c_code order by update_time desc LIMIT ?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectByCondition - <==      Total: 13
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:10 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:10 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category='category' order by update_time desc
+2025-10-03 12:56:10 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: 
+2025-10-03 12:56:10 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 2
+2025-10-03 12:56:12 [http-nio-8080-exec-8] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-03 12:56:12 [http-nio-8080-exec-8] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-03 12:56:12 [http-nio-8080-exec-8] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 10
+2025-10-03 12:56:12 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-03 12:56:12 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:56:12 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-03 12:56:12 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-03 12:56:12 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:56:12 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:12 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-03 12:56:13 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-03 12:56:56 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-03 12:56:56 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-03 12:56:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-03 12:56:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

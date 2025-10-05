@@ -1,3 +1,4 @@
+use expense_records;
 create table users
 (
     id          varchar(255) not null

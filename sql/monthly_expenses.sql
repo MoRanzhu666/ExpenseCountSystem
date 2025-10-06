@@ -1,4 +1,3 @@
-use expense_records;
 create table monthly_expenses
 (
     id            varchar(255)                       not null comment '月表唯一ID'

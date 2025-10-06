@@ -20,6 +20,13 @@
                     AND monthly_total LIKE CONCAT('%', #{monthlyTotal}, '%')
                 </if>
 
+                <if test="months != null and not months.isEmpty()">
+                    AND month IN
+                    <foreach collection="months" item="month" open="(" close=")" separator=",">
+                        #{month}
+                    </foreach>
+                </if>
+
                 <if test="key != null and key != ''">
                     AND (
                     year LIKE CONCAT('%', #{key}, '%')  -- 年份模糊匹配key

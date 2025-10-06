@@ -14,6 +14,12 @@
             <if test="yearlyTotal != null">
                 AND yearly_total LIKE CONCAT('%', #{yearlyTotal}, '%')
             </if>
+            <if test="years != null and not years.isEmpty()">
+                AND year IN
+                <foreach collection="years" item="year" open="(" close=")" separator=",">
+                    #{year}
+                </foreach>
+            </if>
 
             <if test="key != null and key != ''">
                 AND (

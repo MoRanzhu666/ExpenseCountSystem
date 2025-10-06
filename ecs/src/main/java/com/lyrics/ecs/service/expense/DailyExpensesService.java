@@ -9,6 +9,7 @@ import com.lyrics.ecs.bean.req.expense.DailyExpensesReq;
 import com.lyrics.ecs.bean.req.expense.MonthlyExpensesReq;
 import com.lyrics.ecs.bean.req.expense.YearlyExpensesReq;
 import com.lyrics.ecs.bean.resp.expense.DailyExpensesResp;
+import com.lyrics.ecs.bean.resp.expense.ExpensesResp;
 import com.lyrics.ecs.mapper.DailyExpensesMapper;
 import com.lyrics.ecs.utils.ObjectUtils;
 import org.springframework.beans.BeanUtils;
@@ -17,6 +18,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 @Service
@@ -208,5 +212,51 @@ public class DailyExpensesService {
 
     private List<DailyExpensesPo> selectByIds(List<String> ids) {
         return dailyExpensesMapper.selectBatchIds(ids);
+    }
+
+    public ExpensesResp getSelectedExpense(DailyExpensesReq req) {
+//        HashSet<String> months = new HashSet<>();
+//        HashSet<String> years = new HashSet<>();
+//
+//        ExpensesResp expensesResp = new ExpensesResp();
+//        List<DailyExpensesPo> dailyExpensesPos = selectByIds(req.getIds());
+//        List<MonthlyExpensesPo> monthlyExpensesPos = new ArrayList<>();
+//        List<YearlyExpensesPo> yearlyExpensesPos = new ArrayList<>();
+//
+//        dailyExpensesPos.forEach(dpo -> {
+//            months.add(dpo.getMonth().toString());
+//            years.add(dpo.getYear().toString());
+//
+//            HashMap<String, Double> map = new HashMap<>();
+//            if (ObjectUtils.isEmpty(expensesResp.getDailyTotal().get(dpo.getDay().toString()))) {
+//                map.put(dpo.getDay().toString(), dpo.getSingleExpense());
+//                expensesResp.setDailyTotal(map);
+//            } else {
+//                map.put(dpo.getDay().toString(), dpo.getSingleExpense() + map.get(dpo.getDay().toString()));
+//                expensesResp.setDailyTotal(map);
+//            }
+//
+//        });
+//        MonthlyExpensesReq mcondition = new MonthlyExpensesReq();
+//        mcondition.setMonths(months);
+//        monthlyExpensesPos = monthlyExpensesService.selectByCondition(mcondition).getRecords();
+//        YearlyExpensesReq ycondition = new YearlyExpensesReq();
+//        ycondition.setYears(years);
+//        yearlyExpensesPos = yearlyExpensesServiec.selectByCondition(ycondition).getRecords();
+//
+//        monthlyExpensesPos.forEach(mpo -> {
+//            HashMap<String, Double> map = new HashMap<>();
+//            if (ObjectUtils.isEmpty(expensesResp.getMonthlyTotal().get(mpo.getMonth().toString()))) {
+//                map.put(mpo.getMonth().toString(), mpo.getSingleExpense());
+//                expensesResp.setDailyTotal(map);
+//            } else {
+//                map.put(dpo.getDay().toString(), dpo.getSingleExpense() + map.get(dpo.getDay().toString()));
+//                expensesResp.setDailyTotal(map);
+//            }
+//
+//        });
+
+
+        return null;
     }
 }

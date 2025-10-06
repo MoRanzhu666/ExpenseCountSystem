@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 用户年度花销汇总表实体类
@@ -32,5 +33,7 @@ public class YearlyExpensesReq extends CustomIPage<YearlyExpensesPo> {
     private String updateBy;
 
     private LocalDateTime updateTime;
+
+    private Set<String> years;
 }
     

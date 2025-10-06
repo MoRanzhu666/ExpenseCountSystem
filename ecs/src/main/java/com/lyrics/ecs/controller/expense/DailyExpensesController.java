@@ -5,6 +5,7 @@ import com.lyrics.ecs.bean.po.expense.DailyExpensesPo;
 import com.lyrics.ecs.bean.po.ResultPo;
 import com.lyrics.ecs.bean.req.expense.DailyExpensesReq;
 import com.lyrics.ecs.bean.resp.expense.DailyExpensesResp;
+import com.lyrics.ecs.bean.resp.expense.ExpensesResp;
 import com.lyrics.ecs.service.expense.DailyExpensesService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,22 @@ import org.springframework.web.bind.annotation.*;
 public class DailyExpensesController {
     @Autowired
     private DailyExpensesService dailyExpensesService;
+
+    @GetMapping("/getPage")
+    public ResultPo<IPage<DailyExpensesResp>> getPage( @Valid DailyExpensesReq req){
+
+        return ResultPo.success(dailyExpensesService.getPage(req));
+    }
+
+    @GetMapping("/getById")
+    public ResultPo<DailyExpensesPo> getById( DailyExpensesReq req){
+        return ResultPo.success(dailyExpensesService.selectById(req.getId()), "success");
+    }
+
+    @GetMapping("/getSelectedExpense")
+    public ResultPo<ExpensesResp> getSelectedExpense(DailyExpensesReq req){
+        return ResultPo.success(dailyExpensesService.getSelectedExpense(req));
+    }
 
     @PostMapping("/add")
     public ResultPo<String> addDailyExpenses(@RequestBody(required = false) @Valid DailyExpensesResp dp){
@@ -28,16 +45,6 @@ public class DailyExpensesController {
         return ResultPo.success();
     }
 
-    @GetMapping("/getPage")
-    public ResultPo<IPage<DailyExpensesResp>> getPage( @Valid DailyExpensesReq req){
-
-        return ResultPo.success(dailyExpensesService.getPage(req));
-    }
-
-    @GetMapping("/getById")
-    public ResultPo<DailyExpensesPo> getById( DailyExpensesReq req){
-        return ResultPo.success(dailyExpensesService.selectById(req.getId()), "success");
-    }
 
     @DeleteMapping("/deleteById")
     public ResultPo<String> deleteById( DailyExpensesReq req){

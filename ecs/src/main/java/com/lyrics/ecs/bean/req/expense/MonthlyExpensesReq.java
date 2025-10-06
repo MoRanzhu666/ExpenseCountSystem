@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 用户月度花销汇总表实体类
@@ -36,5 +37,6 @@ public class MonthlyExpensesReq extends CustomIPage<MonthlyExpensesReq> {
 
     private LocalDateTime updateTime;
 
+    private Set<String> months;
 }
     

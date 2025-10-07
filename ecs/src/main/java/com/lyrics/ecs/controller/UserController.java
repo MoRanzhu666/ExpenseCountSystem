@@ -23,4 +23,12 @@ public class UserController {
         usersService.add(usersPo);
         return ResultPo.success();
     }
+
+    @PutMapping("/reset")
+    public ResultPo<String> reset(@RequestBody UsersPo usersPo) {
+        usersService.reset(usersPo);
+        return ResultPo.success();
+    }
+
+
 }

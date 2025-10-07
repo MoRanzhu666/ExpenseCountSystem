@@ -35,4 +35,15 @@ public class UsersService {
         usersPo.generateUpdateInfo();
         usersMapper.insert(usersPo);
     }
+
+    public void reset(UsersPo usersPo) {
+        if (ObjectUtils.isEmpty(usersPo)  || ObjectUtils.isEmpty(usersPo.getId())) {
+            throw new BadRequestException("参数校验失败");
+        }
+        usersPo = this.getById(usersPo.getId());
+        usersPo.setPassword(MD5Util.getMD5("123456"));
+        usersPo.generateUpdateInfo();
+        usersMapper.updateById(usersPo);
+
+    }
 }

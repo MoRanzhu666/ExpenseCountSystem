@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/sql/c_code.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/sql/daily_expenses.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/sql/monthly_expenses.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/sql/reset.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/sql/users.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/sql/yearly_expenses.sql" dialect="MySQL" />
   </component>
 </project>

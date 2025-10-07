@@ -1,26 +1,26 @@
-2025-10-06 21:21:58 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 7540 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
-2025-10-06 21:21:58 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
-2025-10-06 21:21:58 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
-2025-10-06 21:21:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-06 21:21:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-06 21:21:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:21:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-10-06 21:21:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2025-10-06 21:21:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:21:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-06 21:21:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2025-10-06 21:21:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-06 21:21:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-06 21:21:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-06 21:21:59 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
-2025-10-06 21:21:59 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1225 ms
-2025-10-06 21:22:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-06 21:22:22 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcMappingContext' parameter 1: Error creating bean with name 'jdbcCustomConversions' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception with message: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception with message: Failed to obtain JDBC Connection
-2025-10-06 21:22:22 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2025-10-06 21:22:22 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2025-10-07 09:18:34 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 18000 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:18:34 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:18:34 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:18:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:18:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:18:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:18:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:18:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:18:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:18:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:18:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:18:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:18:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:18:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:18:35 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:18:35 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1385 ms
+2025-10-07 09:18:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:18:58 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcMappingContext' parameter 1: Error creating bean with name 'jdbcCustomConversions' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception with message: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception with message: Failed to obtain JDBC Connection
+2025-10-07 09:18:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-10-07 09:18:58 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-10-06 21:22:22 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+2025-10-07 09:18:58 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcMappingContext' parameter 1: Error creating bean with name 'jdbcCustomConversions' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception with message: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception with message: Failed to obtain JDBC Connection
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
@@ -175,729 +175,523 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
 	... 106 common frames omitted
-2025-10-06 21:22:34 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 25400 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
-2025-10-06 21:22:34 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
-2025-10-06 21:22:34 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
-2025-10-06 21:22:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-06 21:22:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-06 21:22:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:22:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-10-06 21:22:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2025-10-06 21:22:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:22:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-06 21:22:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2025-10-06 21:22:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-06 21:22:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-06 21:22:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-06 21:22:35 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
-2025-10-06 21:22:35 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1059 ms
-2025-10-06 21:22:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-06 21:22:58 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcMappingContext' parameter 1: Error creating bean with name 'jdbcCustomConversions' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception with message: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception with message: Failed to obtain JDBC Connection
-2025-10-06 21:22:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2025-10-06 21:22:58 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-10-06 21:22:58 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcMappingContext' parameter 1: Error creating bean with name 'jdbcCustomConversions' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception with message: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception with message: Failed to obtain JDBC Connection
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.lyrics.ecs.EcsApplication.main(EcsApplication.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcCustomConversions' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception with message: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception with message: Failed to obtain JDBC Connection
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1760)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1643)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 26 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception with message: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception with message: Failed to obtain JDBC Connection
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 40 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception with message: Failed to obtain JDBC Connection
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:227)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1613)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1571)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:564)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:393)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:386)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1290)
-	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcCustomConversions(AbstractJdbcConfiguration.java:171)
-	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.jdbcCustomConversions(JdbcRepositoriesAutoConfiguration.java:126)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
-	... 43 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception with message: Failed to obtain JDBC Connection
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 65 common frames omitted
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:342)
-	at org.springframework.data.jdbc.core.dialect.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:116)
-	at org.springframework.data.jdbc.core.dialect.DialectResolver.lambda$getDialect$0(DialectResolver.java:86)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.tryAdvance(Streams.java:723)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.springframework.data.jdbc.core.dialect.DialectResolver.getDialect(DialectResolver.java:88)
-	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:56)
-	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:243)
-	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.jdbcDialect(JdbcRepositoriesAutoConfiguration.java:150)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
-	... 68 common frames omitted
-Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
-	... 90 common frames omitted
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:142)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
-	... 103 common frames omitted
-Caused by: java.net.ConnectException: Connection timed out: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
-	... 106 common frames omitted
-2025-10-06 21:23:47 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 28268 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
-2025-10-06 21:23:47 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
-2025-10-06 21:23:47 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
-2025-10-06 21:23:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-06 21:23:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-06 21:23:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:23:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-10-06 21:23:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
-2025-10-06 21:23:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:23:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-06 21:23:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2025-10-06 21:23:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-06 21:23:48 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-06 21:23:48 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-06 21:23:48 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
-2025-10-06 21:23:48 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1015 ms
-2025-10-06 21:23:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-06 21:23:49 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cba90f7
-2025-10-06 21:23:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-06 21:23:49 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-06 21:23:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
-2025-10-06 21:23:49 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.645 seconds (process running for 3.147)
-2025-10-06 21:24:19 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-06 21:24:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-10-06 21:24:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:24:19 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:24:20 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:24:20 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:24:20 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:24:20 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:24:20 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:24:20 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:24:20 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:24:20 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:24:20 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:24:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:24:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:24:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:24:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:24:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:24:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:24:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:24:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:24:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:27:40 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:27:40 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:27:40 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:27:40 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:27:40 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:27:40 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:27:40 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:27:40 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:27:40 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:27:41 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:27:41 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:27:41 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:27:41 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:27:41 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:27:41 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:27:41 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:27:41 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:27:41 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:28:38 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:28:38 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:28:38 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:28:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:28:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:28:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:28:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:28:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:28:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:28:55 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:28:55 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:28:55 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:28:55 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:28:55 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:28:55 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:28:55 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:28:55 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:28:55 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:29:59 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:02 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:30:02 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:30:02 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:30:02 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:30:02 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:30:02 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:30:02 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:30:02 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:30:02 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:09 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:10 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:30:10 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:30:10 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:30:10 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:30:10 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:30:10 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:30:10 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:30:10 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:30:10 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:19 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:20 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:30:20 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:30:20 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:30:20 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:30:20 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:30:20 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:30:20 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:30:20 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:30:20 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:30:57 [http-nio-8080-exec-5] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:31:07 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:32:06 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:32:12 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:38:26 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:38:32 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:38:38 [http-nio-8080-exec-6] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:39:47 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:39:47 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:39:47 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:39:47 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:39:47 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:39:47 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:39:47 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:39:47 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:39:47 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
-2025-10-06 21:40:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
-2025-10-06 21:40:23 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
-2025-10-06 21:40:23 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
-2025-10-06 21:40:23 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
-2025-10-06 21:40:23 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
-2025-10-06 21:40:23 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
-2025-10-06 21:40:23 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
-2025-10-06 21:40:23 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
-2025-10-06 21:40:23 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
-2025-10-06 21:40:23 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
-2025-10-06 21:41:45 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-2025-10-06 21:41:45 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-06 21:41:45 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-06 21:41:45 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-10-06 21:41:45 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-10-06 21:41:45 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 28268 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
-2025-10-06 21:41:45 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
-2025-10-06 21:41:45 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-06 21:41:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-06 21:41:45 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-06 21:41:45 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 240 ms
-2025-10-06 21:41:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2025-10-06 21:41:45 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23a924f8
-2025-10-06 21:41:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
-2025-10-06 21:41:45 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 0.537 seconds (process running for 1079.637)
-2025-10-06 21:41:45 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-10-06 21:41:48 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-06 21:41:48 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-06 21:41:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2025-10-06 21:41:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-2025-10-06 21:46:09 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 26512 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
-2025-10-06 21:46:09 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
-2025-10-06 21:46:09 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
-2025-10-06 21:46:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-06 21:46:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-06 21:46:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:46:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-10-06 21:46:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
-2025-10-06 21:46:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:46:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-06 21:46:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2025-10-06 21:46:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-06 21:46:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-06 21:46:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-06 21:46:10 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
-2025-10-06 21:46:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1059 ms
-2025-10-06 21:46:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-06 21:46:11 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@278cbdae
-2025-10-06 21:46:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-06 21:46:11 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-06 21:46:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
-2025-10-06 21:46:11 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.828 seconds (process running for 3.416)
-2025-10-06 21:47:53 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-06 21:47:53 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-10-06 21:47:53 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-10-06 21:47:53 [http-nio-8080-exec-1] ERROR c.l.e.handler.GlobalExceptionHandler - 系统异常
-org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
-	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
-	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127)
-	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
-	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:509)
-	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2025-10-06 21:47:53 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
-2025-10-06 21:48:36 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s735ms761µs100ns).
-2025-10-06 21:48:36 [http-nio-8080-exec-4] DEBUG c.l.ecs.mapper.UsersMapper.insert - ==>  Preparing: INSERT INTO users ( id, name, password ) VALUES ( ?, ?, ? )
-2025-10-06 21:48:36 [http-nio-8080-exec-4] DEBUG c.l.ecs.mapper.UsersMapper.insert - ==> Parameters: 64b99e57b02d9586fd805988655a5468(String), lyrics(String), 63a9f0ea7bb98050796b649e85481845(String)
-2025-10-06 21:48:36 [http-nio-8080-exec-4] DEBUG c.l.ecs.mapper.UsersMapper.insert - <==    Updates: 1
-2025-10-06 21:50:10 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
-2025-10-06 21:50:10 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-06 21:50:10 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-06 21:50:10 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-10-06 21:50:10 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-10-06 21:50:10 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 26512 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
-2025-10-06 21:50:10 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
-2025-10-06 21:50:10 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
-2025-10-06 21:50:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:50:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-10-06 21:50:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
-2025-10-06 21:50:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:50:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-06 21:50:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2025-10-06 21:50:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-06 21:50:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-06 21:50:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-06 21:50:10 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
-2025-10-06 21:50:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 265 ms
-2025-10-06 21:50:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2025-10-06 21:50:11 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44e2c07c
-2025-10-06 21:50:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2025-10-06 21:50:11 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-06 21:50:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
-2025-10-06 21:50:11 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 0.547 seconds (process running for 242.721)
-2025-10-06 21:50:11 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-10-06 21:50:30 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-10-06 21:50:30 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-06 21:50:30 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-06 21:50:30 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2025-10-06 21:50:30 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-2025-10-06 21:50:30 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 26512 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
-2025-10-06 21:50:30 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
-2025-10-06 21:50:30 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-06 21:50:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-06 21:50:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-06 21:50:30 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 224 ms
-2025-10-06 21:50:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-2025-10-06 21:50:30 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69dbdfdf
-2025-10-06 21:50:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
-2025-10-06 21:50:30 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 0.479 seconds (process running for 262.299)
-2025-10-06 21:50:30 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-10-06 21:51:02 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-06 21:51:02 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-06 21:51:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-2025-10-06 21:51:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-2025-10-06 21:51:05 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 28984 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
-2025-10-06 21:51:05 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
-2025-10-06 21:51:05 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
-2025-10-06 21:51:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-06 21:51:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-06 21:51:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:51:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-10-06 21:51:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
-2025-10-06 21:51:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-06 21:51:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-06 21:51:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2025-10-06 21:51:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-06 21:51:06 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-06 21:51:06 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-06 21:51:06 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
-2025-10-06 21:51:06 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1243 ms
-2025-10-06 21:51:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-06 21:51:07 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@278cbdae
-2025-10-06 21:51:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-06 21:51:07 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-06 21:51:07 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
-2025-10-06 21:51:07 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.886 seconds (process running for 3.376)
-2025-10-06 21:51:10 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-06 21:51:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-10-06 21:51:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-10-06 21:51:12 [http-nio-8080-exec-1] DEBUG c.l.ecs.mapper.UsersMapper.insert - ==>  Preparing: INSERT INTO users ( id, name, role, password ) VALUES ( ?, ?, ?, ? )
-2025-10-06 21:51:12 [http-nio-8080-exec-1] DEBUG c.l.ecs.mapper.UsersMapper.insert - ==> Parameters: 66489980c33d6bbf831576a8cc5cb0ec(String), lyrics(String), SYSTEM_MANAGER(String), 63a9f0ea7bb98050796b649e85481845(String)
-2025-10-06 21:51:12 [http-nio-8080-exec-1] DEBUG c.l.ecs.mapper.UsersMapper.insert - <==    Updates: 1
-2025-10-06 21:51:36 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-06 21:51:36 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-06 21:51:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-10-06 21:51:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 09:24:00 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 16368 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:24:00 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:24:00 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:24:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:24:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:24:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:24:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:24:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:24:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:24:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:24:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:24:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:24:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:24:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:24:01 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:24:01 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1059 ms
+2025-10-07 09:24:01 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:24:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:24:02 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@618e80e8
+2025-10-07 09:24:02 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 09:24:02 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:24:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:24:02 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.646 seconds (process running for 3.166)
+2025-10-07 09:24:06 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 09:24:06 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 09:24:06 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-07 09:24:06 [http-nio-8080-exec-4] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 09:24:54 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 09:24:54 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 09:24:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 09:24:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 09:24:57 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 5032 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:24:57 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:24:57 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:24:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:24:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:24:57 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:24:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 959 ms
+2025-10-07 09:24:58 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:24:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:24:58 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e4d3bb7
+2025-10-07 09:24:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 09:24:59 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:24:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:24:59 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.397 seconds (process running for 2.887)
+2025-10-07 09:25:02 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 09:25:02 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 09:25:02 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 09:25:02 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 09:25:02 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), ff9e905692ad745fffe24b09dac7271e(String)
+2025-10-07 09:25:02 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 0
+2025-10-07 09:25:36 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 09:25:36 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), ff9e905692ad745fffe24b09dac7271e(String)
+2025-10-07 09:25:36 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 0
+2025-10-07 09:25:36 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 09:25:36 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 09:25:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 09:25:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 09:25:40 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 3396 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:25:40 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:25:40 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:25:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:25:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:25:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:25:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:25:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:25:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:25:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:25:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:25:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:25:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:25:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:25:41 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:25:41 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1237 ms
+2025-10-07 09:25:42 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:25:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:25:43 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d205533
+2025-10-07 09:25:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 09:25:43 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:25:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:25:43 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 3.027 seconds (process running for 3.64)
+2025-10-07 09:25:54 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 09:25:54 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 09:25:54 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 09:25:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 09:25:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), 9cf93757e76ec1ffdd8790ce3b74572e(String)
+2025-10-07 09:25:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 0
+2025-10-07 09:26:07 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 09:26:07 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), 9cf93757e76ec1ffdd8790ce3b74572e(String)
+2025-10-07 09:26:07 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 0
+2025-10-07 09:26:07 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 09:26:07 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 09:26:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 09:26:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 09:26:09 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 12372 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:26:09 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:26:09 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:26:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:26:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:26:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:26:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:26:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:26:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:26:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:26:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:26:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:26:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:26:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:26:10 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:26:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1028 ms
+2025-10-07 09:26:10 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:26:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:26:11 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66f107ea
+2025-10-07 09:26:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 09:26:11 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:26:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:26:11 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.524 seconds (process running for 3.116)
+2025-10-07 09:26:13 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 09:26:13 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 09:26:13 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 09:26:17 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 09:26:17 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), 9cf93757e76ec1ffdd8790ce3b74572e(String)
+2025-10-07 09:26:17 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 0
+2025-10-07 09:26:26 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 09:26:27 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 09:26:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 09:26:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 09:26:28 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 2716 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:26:28 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:26:28 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:26:28 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:26:28 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:26:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:26:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:26:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:26:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:26:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:26:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:26:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:26:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:26:29 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:26:29 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:26:29 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 954 ms
+2025-10-07 09:26:30 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:26:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:26:30 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e4d3bb7
+2025-10-07 09:26:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 09:26:30 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:26:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:26:30 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.402 seconds (process running for 2.908)
+2025-10-07 09:26:49 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 09:26:49 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 09:26:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 09:26:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 09:26:52 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 7720 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:26:52 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:26:52 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:26:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:26:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:26:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:26:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:26:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:26:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:26:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:26:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:26:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:26:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:26:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:26:53 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:26:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 924 ms
+2025-10-07 09:26:53 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:26:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:26:53 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59b10314
+2025-10-07 09:26:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 09:26:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:26:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:26:54 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.307 seconds (process running for 2.771)
+2025-10-07 09:26:58 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 09:26:58 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 09:26:58 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 09:27:01 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 09:27:01 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), Lyrics(String)
+2025-10-07 09:27:01 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 09:27:39 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 09:27:39 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 09:27:39 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 09:27:39 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.updateById - ==>  Preparing: UPDATE users SET name=?, role=?, password=?, create_by=?, create_time=?, update_by=?, update_time=? WHERE id=?
+2025-10-07 09:27:39 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.updateById - ==> Parameters: Lyrics(String), SYSTEM_MANAGER(String), e10adc3949ba59abbe56e057f20f883e(String), 1(String), 2025-09-27T22:11(LocalDateTime), 1(String), 2025-10-07T09:27:39.215948600(LocalDateTime), 1(String)
+2025-10-07 09:27:39 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.updateById - <==    Updates: 1
+2025-10-07 09:27:53 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 09:27:53 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 09:27:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 09:27:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 09:27:56 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 13132 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:27:56 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:27:56 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:27:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:27:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:27:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:27:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:27:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:27:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:27:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:27:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:27:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:27:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:27:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:27:57 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:27:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 943 ms
+2025-10-07 09:27:58 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:27:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:27:58 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e1052b3
+2025-10-07 09:27:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 09:27:58 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:27:58 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:27:58 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.379 seconds (process running for 2.932)
+2025-10-07 09:29:01 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 09:29:01 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 09:29:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 09:29:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 09:29:04 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 7268 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:29:04 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:29:04 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:29:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:29:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:29:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:29:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:29:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:29:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:29:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:29:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:29:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:29:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:29:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:29:05 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:29:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1073 ms
+2025-10-07 09:29:06 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:29:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:29:06 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1be573e4
+2025-10-07 09:29:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 09:29:07 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:29:07 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:29:07 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.62 seconds (process running for 3.104)
+2025-10-07 09:31:33 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 09:31:33 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 09:31:33 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 09:31:33 [http-nio-8080-exec-2] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 09:32:09 [http-nio-8080-exec-4] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 09:32:52 [http-nio-8080-exec-10] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 09:34:45 [http-nio-8080-exec-9] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 09:51:11 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-07 09:51:11 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 09:51:11 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 09:51:11 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 09:51:11 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 09:51:11 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 7268 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:51:11 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:51:11 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:51:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:51:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:51:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:51:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:51:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:51:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:51:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:51:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:51:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:51:11 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:51:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 284 ms
+2025-10-07 09:51:11 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:51:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-10-07 09:51:12 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ed15595
+2025-10-07 09:51:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-10-07 09:51:12 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:51:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:51:12 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 0.582 seconds (process running for 1328.111)
+2025-10-07 09:51:12 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-10-07 09:54:52 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 09:54:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 09:54:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 09:54:52 [http-nio-8080-exec-4] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 09:55:16 [http-nio-8080-exec-7] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 09:55:29 [http-nio-8080-exec-6] ERROR c.l.e.handler.GlobalExceptionHandler - 系统异常
+org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:220) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:196) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at com.lyrics.ecs.filter.AuthFilter.doFilterInternal(AuthFilter.java:41) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+2025-10-07 09:55:29 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2025-10-07 09:56:39 [http-nio-8080-exec-9] ERROR c.l.e.handler.GlobalExceptionHandler - 系统异常
+org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:220) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:196) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at com.lyrics.ecs.filter.AuthFilter.doFilterInternal(AuthFilter.java:41) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+2025-10-07 09:56:39 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2025-10-07 09:57:34 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 09:57:34 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 09:57:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-10-07 09:57:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-10-07 09:57:37 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 10796 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 09:57:37 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 09:57:37 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 09:57:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 09:57:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 09:57:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:57:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 09:57:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2025-10-07 09:57:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 09:57:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 09:57:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-10-07 09:57:39 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 09:57:39 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 09:57:39 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 09:57:39 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 09:57:39 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1102 ms
+2025-10-07 09:57:39 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 09:57:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 09:57:40 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e4d3bb7
+2025-10-07 09:57:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 09:57:40 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 09:57:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 09:57:40 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.829 seconds (process running for 3.392)
+2025-10-07 09:57:54 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 09:57:54 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 09:57:54 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 09:58:00 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 09:58:00 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: 12(String), c20ad4d76fe97759aa27a0c99bff6710(String)
+2025-10-07 09:58:00 [http-nio-8080-exec-2] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 0
+2025-10-07 09:58:38 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 09:58:38 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: 12(String), c20ad4d76fe97759aa27a0c99bff6710(String)
+2025-10-07 09:58:38 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 0
+2025-10-07 10:00:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:00:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: 12(String), c20ad4d76fe97759aa27a0c99bff6710(String)
+2025-10-07 10:00:22 [http-nio-8080-exec-10] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 0
+2025-10-07 10:01:09 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:01:09 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), e10adc3949ba59abbe56e057f20f883e(String)
+2025-10-07 10:01:09 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 10:01:29 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:01:29 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), e10adc3949ba59abbe56e057f20f883e(String)
+2025-10-07 10:01:29 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 10:03:40 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:03:40 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), e10adc3949ba59abbe56e057f20f883e(String)
+2025-10-07 10:03:40 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 10:03:57 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:03:57 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:03:57 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:03:57 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:03:57 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:03:57 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:03:57 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:03:57 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:03:57 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:05:14 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:05:14 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:05:14 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:05:14 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:05:14 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:05:14 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:05:14 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:05:14 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:05:14 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:12:13 [http-nio-8080-exec-8] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:12:13 [http-nio-8080-exec-8] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:12:13 [http-nio-8080-exec-8] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:12:13 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:12:13 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:12:13 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:12:13 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:12:13 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:12:13 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:12:18 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:12:18 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:12:18 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:12:18 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:12:18 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:12:18 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:12:18 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:12:18 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:12:18 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:13:17 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:13:17 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:13:17 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:13:17 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:13:17 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:13:17 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:13:17 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:13:17 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:13:17 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:14:13 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:14:13 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:14:13 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:14:13 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:14:13 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:14:13 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:14:13 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:14:13 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:14:13 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:15:03 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:15:03 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:15:03 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:15:03 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:15:03 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:15:03 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:15:03 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:15:03 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:15:03 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:15:16 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 10:15:17 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 10:15:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 10:15:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

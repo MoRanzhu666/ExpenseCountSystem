@@ -13,8 +13,8 @@ public class AuthController {
     private AuthService authService;
 
     @PostMapping("/login")
-    public ResultPo<String> login(@RequestParam String username, @RequestParam String password) {
-        String token = authService.login(username, password);
+    public ResultPo<String> login(@RequestBody UsersPo usersPo) {
+        String token = authService.login(usersPo.getName(), usersPo.getPassword());
         if (token != null) {
             return ResultPo.success( token,"登录成功");
         }
@@ -25,7 +25,7 @@ public class AuthController {
     public ResultPo<UsersPo> verifyToken(@RequestParam String token) {
         UsersPo user = authService.verifyToken(token);
         if (user != null) {
-             return ResultPo.success( user,"验证成功");
+             return ResultPo.success( user);
         }
         return ResultPo.error( 401, "验证失败");
     }

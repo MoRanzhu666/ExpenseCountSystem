@@ -695,3 +695,246 @@ org.springframework.web.bind.MissingServletRequestParameterException: Required r
 2025-10-07 10:15:17 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
 2025-10-07 10:15:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-10-07 10:15:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 10:15:19 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 9604 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 10:15:19 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 10:15:19 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 10:15:19 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 10:15:19 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 10:15:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 10:15:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 10:15:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2025-10-07 10:15:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 10:15:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 10:15:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 10:15:20 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 10:15:20 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 10:15:20 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 10:15:20 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 10:15:20 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1003 ms
+2025-10-07 10:15:21 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 10:15:21 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 10:15:21 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66f107ea
+2025-10-07 10:15:21 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 10:15:21 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 10:15:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 10:15:21 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.48 seconds (process running for 2.979)
+2025-10-07 10:15:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 10:15:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 10:15:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 10:27:50 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:27:50 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), e10adc3949ba59abbe56e057f20f883e(String)
+2025-10-07 10:27:50 [http-nio-8080-exec-9] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 10:28:01 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:28:01 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), e10adc3949ba59abbe56e057f20f883e(String)
+2025-10-07 10:28:01 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 10:29:11 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:29:11 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), e10adc3949ba59abbe56e057f20f883e(String)
+2025-10-07 10:29:11 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 10:29:11 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:29:11 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:29:11 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:29:11 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:29:11 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:29:11 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:29:11 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:29:11 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:29:11 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:29:39 [http-nio-8080-exec-6] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 10:29:39 [http-nio-8080-exec-5] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 10:29:48 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:29:48 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), f1bfd514f667cebd7595218b5a40d5b1(String)
+2025-10-07 10:29:48 [http-nio-8080-exec-8] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 0
+2025-10-07 10:29:48 [http-nio-8080-exec-1] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 10:29:48 [http-nio-8080-exec-2] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 10:29:51 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:29:51 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), e10adc3949ba59abbe56e057f20f883e(String)
+2025-10-07 10:29:51 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 10:29:51 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:29:51 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:29:51 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:29:51 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:29:51 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:29:51 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:29:51 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:29:51 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:29:51 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:30:52 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 50 class path changes (0 additions, 0 deletions, 50 modifications)
+2025-10-07 10:30:52 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 10:30:52 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 10:30:52 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 10:30:52 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 10:30:52 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 9604 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 10:30:52 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 10:30:52 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 10:30:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 10:30:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 10:30:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-10-07 10:30:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 10:30:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 10:30:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-10-07 10:30:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 10:30:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 10:30:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 10:30:53 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 10:30:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 298 ms
+2025-10-07 10:30:53 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 10:30:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-10-07 10:30:53 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5df0107f
+2025-10-07 10:30:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-10-07 10:30:53 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 10:30:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 10:30:53 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 0.636 seconds (process running for 934.337)
+2025-10-07 10:30:53 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-10-07 10:31:59 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 10:31:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 10:31:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-07 10:32:08 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 10:32:08 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 10:32:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-10-07 10:32:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-10-07 10:34:59 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 21224 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 10:34:59 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 10:34:59 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 10:34:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 10:34:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 10:35:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 10:35:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 10:35:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2025-10-07 10:35:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 10:35:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 10:35:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-10-07 10:35:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 10:35:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 10:35:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 10:35:00 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 10:35:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1272 ms
+2025-10-07 10:35:01 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 10:35:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 10:35:01 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e4d3bb7
+2025-10-07 10:35:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 10:35:02 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 10:35:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 10:35:02 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.927 seconds (process running for 3.412)
+2025-10-07 10:35:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 10:35:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 10:35:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 10:35:05 [http-nio-8080-exec-1] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 10:48:48 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 10:48:48 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), e10adc3949ba59abbe56e057f20f883e(String)
+2025-10-07 10:48:48 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 10:48:49 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 10:48:49 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 10:48:49 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 10:48:49 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 10:48:49 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 10:48:49 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 10:48:49 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 10:48:49 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 10:48:49 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 10:48:54 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 10:48:55 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 10:48:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 10:48:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 13:12:29 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 7632 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 13:12:29 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 13:12:29 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 13:12:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 13:12:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 13:12:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 13:12:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 13:12:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2025-10-07 13:12:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 13:12:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 13:12:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 13:12:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 13:12:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 13:12:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 13:12:30 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 13:12:30 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1165 ms
+2025-10-07 13:12:31 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 13:12:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 13:12:31 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14ebf934
+2025-10-07 13:12:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 13:12:31 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 13:12:31 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-07 13:12:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 13:12:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 13:12:32 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-07 13:12:32 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-10-07 13:12:40 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 19904 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 13:12:40 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 13:12:40 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 13:12:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 13:12:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 13:12:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 13:12:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 13:12:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2025-10-07 13:12:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 13:12:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 13:12:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 13:12:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 13:12:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 13:12:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 13:12:41 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 13:12:41 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 954 ms
+2025-10-07 13:12:41 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 13:12:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 13:12:41 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e4d3bb7
+2025-10-07 13:12:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 13:12:42 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 13:12:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 13:12:42 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.407 seconds (process running for 2.913)
+2025-10-07 13:12:45 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 13:12:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 13:12:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 13:12:45 [http-nio-8080-exec-1] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 13:12:52 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 13:12:53 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 13:12:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 13:12:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 13:15:54 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 3864 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 13:15:54 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 13:15:54 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 13:15:54 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 13:15:54 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 13:15:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 13:15:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 13:15:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2025-10-07 13:15:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 13:15:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 13:15:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-07 13:15:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 13:15:55 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 13:15:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 13:15:55 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 13:15:55 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 955 ms
+2025-10-07 13:15:55 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 13:15:55 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 13:15:56 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e4d3bb7
+2025-10-07 13:15:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 13:15:56 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 13:15:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 13:15:56 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.418 seconds (process running for 2.891)
+2025-10-07 13:15:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 13:15:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 13:15:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-07 13:15:58 [http-nio-8080-exec-1] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 13:16:03 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 13:16:03 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 13:16:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 13:16:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

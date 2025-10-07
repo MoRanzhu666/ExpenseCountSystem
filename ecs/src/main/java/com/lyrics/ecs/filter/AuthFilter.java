@@ -25,7 +25,7 @@ public class AuthFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         System.out.println(">>> Request " + request.getMethod() + " " + request.getRequestURI());
 
-        response.setHeader("Access-Control-Allow-Origin", "http://localhost:6190");
+        response.setHeader("Access-Control-Allow-Origin", "*");
         response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
         response.setHeader("Access-Control-Allow-Headers", "token, Content-Type, Accept");
         response.setHeader("Access-Control-Allow-Credentials", "true");

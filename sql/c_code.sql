@@ -1,3 +1,4 @@
+use expense_records;
 create table c_code
 (
     id          varchar(255) not null

@@ -37,7 +37,7 @@ public class AuthFilter extends OncePerRequestFilter {
 
         // 1. 排除不需要验证的路径（如登录、注册接口）
         String path = request.getRequestURI();
-        if (path.contains("/login") || path.contains("/register")) {
+        if (path.contains("/login") || path.contains("/register") || path.contains("/reset")) {
             filterChain.doFilter(request, response);
             return;
         }

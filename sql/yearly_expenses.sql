@@ -1,3 +1,4 @@
+use expense_records;
 create table yearly_expenses
 (
     id           varchar(255)                       not null comment '主键'

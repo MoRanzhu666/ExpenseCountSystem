@@ -21,7 +21,9 @@ public class MonthlyExpensesService {
     private UsersService usersService;
 
     public void save(MonthlyExpensesPo monthlyExpensesPo) {
-        if(ObjectUtils.isEmpty(monthlyExpensesPo.getId())){
+        if(ObjectUtils.isEmpty(monthlyExpensesPo
+
+                .getId())){
             monthlyExpensesPo.generateCreateInfo();
             monthlyExpensesPo.generateUpdateInfo();
             monthlyExpensesMapper.insert(monthlyExpensesPo);

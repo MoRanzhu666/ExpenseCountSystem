@@ -1,3 +1,4 @@
+use expense_records;
 create table daily_expenses
 (
     id              varchar(255)                       not null comment '日表唯一ID'

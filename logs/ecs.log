@@ -938,3 +938,719 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2025-10-07 13:16:03 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
 2025-10-07 13:16:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-10-07 13:16:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-07 13:24:46 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Starting EcsApplication using Java 17.0.2 with PID 14720 (D:\workspace\workspace_Java_SpringBoot3\ecs\ecs\target\classes started by luoying666 in D:\workspace\workspace_Java_SpringBoot3\ecs)
+2025-10-07 13:24:46 [restartedMain] DEBUG com.lyrics.ecs.EcsApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-07 13:24:46 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - The following 1 profile is active: "dev"
+2025-10-07 13:24:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-07 13:24:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-07 13:24:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 13:24:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-07 13:24:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2025-10-07 13:24:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-07 13:24:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-07 13:24:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-10-07 13:24:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-07 13:24:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-07 13:24:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07 13:24:47 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring embedded WebApplicationContext
+2025-10-07 13:24:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1061 ms
+2025-10-07 13:24:47 [restartedMain] DEBUG com.lyrics.ecs.filter.AuthFilter - Filter 'authFilter' configured for use
+2025-10-07 13:24:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-07 13:24:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2928f1f5
+2025-10-07 13:24:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-07 13:24:48 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-07 13:24:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/ecs'
+2025-10-07 13:24:48 [restartedMain] INFO  com.lyrics.ecs.EcsApplication - Started EcsApplication in 2.588 seconds (process running for 3.768)
+2025-10-07 13:25:28 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/ecs] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07 13:25:28 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-07 13:25:28 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-07 13:25:53 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:25:53 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:25:53 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:25:53 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:25:53 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 10(Long)
+2025-10-07 13:25:53 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 10
+2025-10-07 13:26:00 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:26:00 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: SNACKS(String)
+2025-10-07 13:26:00 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:26:00 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:26:00 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: SNACKS(String), 10(Long)
+2025-10-07 13:26:00 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 3
+2025-10-07 13:27:05 [http-nio-8080-exec-5] WARN  com.lyrics.ecs.filter.AuthFilter - 认证异常：{}Auth Exception: Unauthorized
+2025-10-07 13:28:53 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE (name = ? AND password = ?)
+2025-10-07 13:28:53 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - ==> Parameters: Lyrics(String), e10adc3949ba59abbe56e057f20f883e(String)
+2025-10-07 13:28:53 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectList - <==      Total: 1
+2025-10-07 13:28:54 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:28:54 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:28:54 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:28:54 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:28:54 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:28:54 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:28:54 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:28:54 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:28:54 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:31:18 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:31:18 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:31:18 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:31:19 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:31:19 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:31:19 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:31:19 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:31:19 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:31:19 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:31:37 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:31:37 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:31:37 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:31:37 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:31:37 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:31:37 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:31:37 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:31:37 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:31:37 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:32:10 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:32:10 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:32:10 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:32:10 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:32:10 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:32:10 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:32:10 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:32:10 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:32:10 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:33:27 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:33:27 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:33:27 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:33:27 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:33:27 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:33:27 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:33:27 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:33:27 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:33:27 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:35:09 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:35:09 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:35:09 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:35:09 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:35:09 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:35:09 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:35:09 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:35:09 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:35:09 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:35:45 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:35:45 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:35:45 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:35:45 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:35:45 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:35:45 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:35:45 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:35:45 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:35:45 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:37:29 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:37:29 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:37:29 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:37:29 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:37:29 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:37:29 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:37:29 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:37:29 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:37:29 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:40:07 [http-nio-8080-exec-8] ERROR c.l.e.handler.GlobalExceptionHandler - 系统异常
+org.springframework.beans.InvalidPropertyException: Invalid property 'key[searchCategory]' of bean class [com.lyrics.ecs.bean.req.expense.DailyExpensesReq]: Property referenced in indexed property path 'key[searchCategory]' is neither an array nor a List nor a Map; returned value was []
+	at org.springframework.beans.AbstractNestablePropertyAccessor.processKeyedProperty(AbstractNestablePropertyAccessor.java:374)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:275)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:266)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:104)
+	at org.springframework.validation.DataBinder.applyPropertyValues(DataBinder.java:1387)
+	at org.springframework.validation.DataBinder.doBind(DataBinder.java:1273)
+	at org.springframework.web.bind.WebDataBinder.doBind(WebDataBinder.java:235)
+	at org.springframework.web.bind.ServletRequestDataBinder.bind(ServletRequestDataBinder.java:169)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.bindRequestParameters(ServletModelAttributeMethodProcessor.java:168)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:153)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.lyrics.ecs.filter.AuthFilter.doFilterInternal(AuthFilter.java:52)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-10-07 13:40:07 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.beans.InvalidPropertyException: Invalid property 'key[searchCategory]' of bean class [com.lyrics.ecs.bean.req.expense.DailyExpensesReq]: Property referenced in indexed property path 'key[searchCategory]' is neither an array nor a List nor a Map; returned value was []]
+2025-10-07 13:41:34 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:41:34 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:41:34 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:41:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:41:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:41:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:41:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:41:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:41:34 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:41:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:41:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:41:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:41:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:41:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:41:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:42:08 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:42:08 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:42:08 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:42:08 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:42:08 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:42:08 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:42:08 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:42:08 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:42:08 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:42:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:42:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:42:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:42:12 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:42:12 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:42:12 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:42:12 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:42:12 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:42:12 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:42:14 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:42:14 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: MEDICINE(String)
+2025-10-07 13:42:14 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:42:14 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:42:14 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: MEDICINE(String), 20(Long)
+2025-10-07 13:42:14 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 1
+2025-10-07 13:42:22 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:42:22 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: GAMING(String)
+2025-10-07 13:42:22 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:42:26 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:42:26 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: PHONE_CREDIT(String)
+2025-10-07 13:42:26 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:42:30 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:42:30 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: COMMUTING(String)
+2025-10-07 13:42:30 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:42:30 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:42:30 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: COMMUTING(String), 20(Long)
+2025-10-07 13:42:30 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 3
+2025-10-07 13:42:34 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:42:34 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: UNEXPENSE(String)
+2025-10-07 13:42:34 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:42:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:42:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: SNACKS(String)
+2025-10-07 13:42:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:42:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:42:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: SNACKS(String), 20(Long)
+2025-10-07 13:42:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 3
+2025-10-07 13:49:16 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:49:16 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:49:16 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:49:16 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:49:16 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:49:16 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:49:16 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:49:16 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:49:16 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:49:34 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:49:34 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: GAMING(String)
+2025-10-07 13:49:34 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:49:34 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:49:34 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: GAMING(String), 20(Long)
+2025-10-07 13:49:34 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 1
+2025-10-07 13:49:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:49:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: UNEXPENSE(String)
+2025-10-07 13:49:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:49:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:49:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: UNEXPENSE(String), 20(Long)
+2025-10-07 13:49:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 5
+2025-10-07 13:49:56 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:49:56 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: GAMING(String)
+2025-10-07 13:49:56 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:49:56 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:49:56 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: GAMING(String), 20(Long)
+2025-10-07 13:49:56 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 1
+2025-10-07 13:50:05 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:50:05 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: SHOPPING(String)
+2025-10-07 13:50:05 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:50:05 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:50:05 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: SHOPPING(String), 20(Long)
+2025-10-07 13:50:05 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:50:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:50:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:50:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:50:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:50:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 50(Long)
+2025-10-07 13:50:10 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 50
+2025-10-07 13:51:06 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:51:06 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: COMMUTING(String)
+2025-10-07 13:51:06 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:51:06 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:51:06 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: COMMUTING(String), 50(Long)
+2025-10-07 13:51:06 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 18
+2025-10-07 13:51:56 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:51:56 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:51:56 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:51:56 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:51:56 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 50(Long)
+2025-10-07 13:51:56 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 50
+2025-10-07 13:52:05 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:52:05 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:52:05 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:52:05 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:52:05 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 50(Long)
+2025-10-07 13:52:05 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 50
+2025-10-07 13:52:06 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:52:06 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:52:06 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:52:06 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:52:06 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 50(Long)
+2025-10-07 13:52:06 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 50
+2025-10-07 13:52:08 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:52:08 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: COMMUTING(String)
+2025-10-07 13:52:08 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:52:08 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:52:08 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: COMMUTING(String), 50(Long)
+2025-10-07 13:52:08 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 18
+2025-10-07 13:52:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:52:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: OTHER(String)
+2025-10-07 13:52:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:52:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:52:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: OTHER(String), 50(Long)
+2025-10-07 13:52:38 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 1
+2025-10-07 13:52:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:52:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: MEDICINE(String)
+2025-10-07 13:52:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:52:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:52:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: MEDICINE(String), 50(Long)
+2025-10-07 13:52:40 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 1
+2025-10-07 13:52:42 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:52:42 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:52:42 [http-nio-8080-exec-6] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:52:42 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:52:42 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:52:42 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:52:42 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:52:42 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:52:42 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:53:10 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:53:10 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:53:10 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:53:10 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:53:10 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:53:10 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:53:10 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:53:10 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:53:10 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:53:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:53:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:53:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:53:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:53:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:53:12 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:53:29 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:53:29 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: OTHER(String)
+2025-10-07 13:53:29 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:53:29 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:53:29 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: OTHER(String), 20(Long)
+2025-10-07 13:53:29 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 1
+2025-10-07 13:53:30 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:53:30 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:53:30 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:53:30 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:53:30 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:53:30 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:53:44 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:53:44 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: OTHER(String)
+2025-10-07 13:53:44 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:53:44 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:53:44 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: OTHER(String), 20(Long)
+2025-10-07 13:53:44 [http-nio-8080-exec-9] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 1
+2025-10-07 13:53:48 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:53:48 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:53:48 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:53:48 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:53:48 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:53:48 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:53:57 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:53:57 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:53:57 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:53:57 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:53:57 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:53:57 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:54:01 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:54:01 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: COMMUTING(String)
+2025-10-07 13:54:01 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:54:01 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:54:01 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: COMMUTING(String), 20(Long)
+2025-10-07 13:54:01 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 18
+2025-10-07 13:54:06 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:54:06 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: COMMUTING(String)
+2025-10-07 13:54:06 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:54:06 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:54:06 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: COMMUTING(String), 20(Long)
+2025-10-07 13:54:06 [http-nio-8080-exec-5] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 18
+2025-10-07 13:54:07 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:54:07 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: COMMUTING(String)
+2025-10-07 13:54:07 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:54:07 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:54:07 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: COMMUTING(String), 20(Long)
+2025-10-07 13:54:07 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 18
+2025-10-07 13:54:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 13:54:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: GAMING(String)
+2025-10-07 13:54:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:54:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:54:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: GAMING(String), 20(Long)
+2025-10-07 13:54:12 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 1
+2025-10-07 13:54:13 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:54:13 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:54:13 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:54:13 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:54:13 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:54:13 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:56:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:56:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:56:38 [http-nio-8080-exec-5] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:56:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:56:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:56:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:56:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:56:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:56:38 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:59:25 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:59:25 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:59:25 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:59:25 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:59:25 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:59:25 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:59:25 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:59:25 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:59:25 [http-nio-8080-exec-2] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:59:39 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:59:39 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:59:39 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:59:39 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:59:39 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:59:39 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:59:39 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:59:39 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:59:39 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:59:52 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:59:52 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:59:52 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:59:52 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:59:52 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:59:52 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:59:52 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:59:52 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:59:52 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 13:59:59 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 13:59:59 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 13:59:59 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 13:59:59 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 13:59:59 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 13:59:59 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 13:59:59 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 13:59:59 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 13:59:59 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:00:07 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:00:07 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:00:07 [http-nio-8080-exec-10] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:00:07 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:00:07 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:00:07 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:00:07 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:00:07 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:00:07 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:00:19 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:00:19 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:00:19 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:00:19 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:00:19 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:00:19 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:00:19 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:00:19 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:00:19 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:01:06 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:01:06 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:01:06 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:01:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:01:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:01:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:01:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:01:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:01:06 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:02:13 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:02:13 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:02:13 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:02:13 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:02:13 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:02:13 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:02:13 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:02:13 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:02:13 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:02:16 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:02:16 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:02:16 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:02:16 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:02:16 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:02:16 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:02:16 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:02:16 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:02:16 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:03:10 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:03:10 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:03:10 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:03:10 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:03:10 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:03:10 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:03:10 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:03:10 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:03:10 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:03:12 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:03:12 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:03:12 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:03:12 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:03:12 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:03:12 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:03:12 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:03:12 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:03:12 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:03:16 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:03:16 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:03:16 [http-nio-8080-exec-9] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:03:16 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:03:16 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:03:16 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:03:16 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:03:16 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:03:16 [http-nio-8080-exec-10] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:04:09 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:04:09 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:04:09 [http-nio-8080-exec-2] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:04:09 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:04:09 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:04:09 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:04:09 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:04:09 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:04:09 [http-nio-8080-exec-6] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:04:21 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:04:21 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:04:21 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:04:21 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:04:21 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:04:21 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:04:21 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:04:21 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:04:21 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:04:22 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:04:22 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:04:22 [http-nio-8080-exec-4] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:04:22 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:04:22 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:04:22 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:04:22 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:04:22 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:04:22 [http-nio-8080-exec-1] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:04:29 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:04:29 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:04:29 [http-nio-8080-exec-3] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:04:29 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:04:29 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:04:29 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:04:29 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:04:29 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:04:29 [http-nio-8080-exec-7] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:04:53 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de WHERE expense_reason LIKE CONCAT('%', ?, '%')
+2025-10-07 14:04:53 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: MEDICINE(String)
+2025-10-07 14:04:53 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:04:53 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by WHERE expense_reason LIKE CONCAT('%', ?, '%') ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:04:53 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: MEDICINE(String), 20(Long)
+2025-10-07 14:04:53 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 1
+2025-10-07 14:04:55 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:04:55 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:04:55 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:04:55 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:04:55 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:04:55 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:05:52 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:05:52 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:05:52 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:05:52 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:05:52 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:05:52 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:05:52 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:05:52 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:05:52 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:01 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:23 [http-nio-8080-exec-4] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:24 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:06:24 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:06:24 [http-nio-8080-exec-1] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:06:24 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:06:24 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:06:24 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:06:24 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:06:24 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:06:24 [http-nio-8080-exec-3] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:25 [http-nio-8080-exec-7] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:53 [http-nio-8080-exec-8] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:06:53 [http-nio-8080-exec-8] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:06:53 [http-nio-8080-exec-8] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:06:53 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:06:53 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:06:53 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:06:53 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:06:53 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:06:53 [http-nio-8080-exec-4] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM monthly_expenses
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition_mpCount - <==      Total: 1
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition - ==>  Preparing: SELECT * FROM monthly_expenses ORDER BY year DESC, month DESC LIMIT ?
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.m.M.selectByCondition - <==      Total: 3
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:54 [http-nio-8080-exec-1] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM yearly_expenses
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.m.Y.selectByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.m.Y.selectByCondition_mpCount - <==      Total: 1
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.m.Y.selectByCondition - ==>  Preparing: SELECT * FROM yearly_expenses ORDER BY year DESC LIMIT ?
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.m.Y.selectByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.m.Y.selectByCondition - <==      Total: 1
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==>  Preparing: SELECT id,name,role,password,create_by,create_time,update_by,update_time FROM users WHERE id=?
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - ==> Parameters: 1(String)
+2025-10-07 14:06:55 [http-nio-8080-exec-3] DEBUG c.l.e.mapper.UsersMapper.selectById - <==      Total: 1
+2025-10-07 14:06:55 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==>  Preparing: select * from c_code WHERE category=? order by update_time desc
+2025-10-07 14:06:55 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - ==> Parameters: EXPENSE(String)
+2025-10-07 14:06:55 [http-nio-8080-exec-7] DEBUG c.l.e.m.s.C.selectCategorySelector - <==      Total: 12
+2025-10-07 14:06:55 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM daily_expenses de
+2025-10-07 14:06:55 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - ==> Parameters: 
+2025-10-07 14:06:55 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition_mpCount - <==      Total: 1
+2025-10-07 14:06:55 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==>  Preparing: SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de left join users u on u.id=de.create_by left join users u2 on u2.id=de.update_by ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc LIMIT ?
+2025-10-07 14:06:55 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - ==> Parameters: 20(Long)
+2025-10-07 14:06:55 [http-nio-8080-exec-8] DEBUG c.l.e.m.D.selectRespByCondition - <==      Total: 20
+2025-10-07 14:07:17 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07 14:07:17 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-07 14:07:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-07 14:07:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

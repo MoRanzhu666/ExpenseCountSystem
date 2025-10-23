@@ -64,13 +64,13 @@ spring:
 #          max-wait: -1ms     # 最大等待时间
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.1.7:3306/expense_records?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.101.10:3306/expense_records?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: remote_user
     password: Wluoying666@
 
   data:
     redis:
-      host: 192.168.1.7
+      host: 192.168.101.10
       port: 6379             # Redis 端口
       password: root       # 如果 redis.conf 配置了 requirepass，就填这里
       database: 1            # 默认数据库，0-15

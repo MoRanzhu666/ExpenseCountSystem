@@ -10,6 +10,9 @@ import com.lyrics.ecs.utils.ObjectUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Map;
+
 @Service
 public class UsersService {
     @Autowired
@@ -45,5 +48,16 @@ public class UsersService {
         usersPo.generateUpdateInfo();
         usersMapper.updateById(usersPo);
 
+    }
+
+    public List<UsersPo> getByIds(List<String> ids) {
+        return usersMapper.selectBatchIds(ids);
+    }
+
+    public Map<String, String> getUserNameMapByIds(List<String> ids) {
+        List<UsersPo> usersPos = this.getByIds(ids);
+        return usersPos.stream().collect(
+                java.util.stream.Collectors.toMap(UsersPo::getId, UsersPo::getName, (existing, replacement) -> existing)
+        );
     }
 }

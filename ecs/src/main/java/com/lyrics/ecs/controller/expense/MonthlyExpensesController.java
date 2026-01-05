@@ -1,6 +1,8 @@
 package com.lyrics.ecs.controller.expense;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.lyrics.ecs.bean.po.ResultPo;
+import com.lyrics.ecs.bean.po.expense.MonthlyExpensesPo;
 import com.lyrics.ecs.bean.req.expense.MonthlyExpensesReq;
 import com.lyrics.ecs.bean.resp.expense.MonthlyExpensesResp;
 import com.lyrics.ecs.service.expense.MonthlyExpensesService;
@@ -17,7 +19,7 @@ public class MonthlyExpensesController {
     MonthlyExpensesService monthlyExpensesService;
 
     @GetMapping("/getPage")
-    public ResultPo<MonthlyExpensesResp> getPage(@Valid MonthlyExpensesReq req){
+    public ResultPo<IPage<MonthlyExpensesResp>> getPage(@Valid MonthlyExpensesReq req){
 
         return ResultPo.success(monthlyExpensesService.getPage(req));
     }

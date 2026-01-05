@@ -1,4 +1,4 @@
-HELP.md
+# Maven
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -14,17 +14,17 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
 
 ### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -32,9 +32,11 @@ build/
 ### VS Code ###
 .vscode/
 
-# log
+# 日志文件 - 修正后的配置
 *.log
-logs
-/logs/*
-/logs/*.log
-ecs/logs
+logs/
+**/logs/
+**/logs/*.log
+**/*.log
+**/ecs/logs/
+**/ecs/logs/*.log

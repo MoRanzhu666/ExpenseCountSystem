@@ -36,4 +36,5 @@ build/
 *.log
 logs
 /logs/*
+/logs/*.log
 ecs/logs

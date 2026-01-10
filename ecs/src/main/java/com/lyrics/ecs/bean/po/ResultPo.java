@@ -43,7 +43,16 @@ public class ResultPo<T> implements Serializable {
     public static <T> ResultPo<T> success() {
         ResultPo<T> result = new ResultPo<>();
         result.setCode(200);
-        result.setMessage("操作成功");
+        return result;
+    }
+
+    /**
+     * 成功返回（信息）
+     */
+    public static <T> ResultPo<T> success(String message) {
+        ResultPo<T> result = new ResultPo<>();
+        result.setMessage(message);
+        result.setCode(200);
         return result;
     }
 

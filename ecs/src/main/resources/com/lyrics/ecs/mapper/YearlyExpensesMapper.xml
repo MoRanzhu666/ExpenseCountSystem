@@ -4,8 +4,8 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lyrics.ecs.mapper.YearlyExpensesMapper">
 
-    <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.YearlyExpensesPo"
-            parameterType="com.lyrics.ecs.bean.req.YearlyExpensesReq">
+    <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.expense.YearlyExpensesPo"
+            parameterType="com.lyrics.ecs.bean.req.expense.YearlyExpensesReq">
         SELECT * FROM yearly_expenses
         <where>
             <if test="year != null">
@@ -13,6 +13,12 @@
             </if>
             <if test="yearlyTotal != null">
                 AND yearly_total LIKE CONCAT('%', #{yearlyTotal}, '%')
+            </if>
+            <if test="years != null and not years.isEmpty()">
+                AND year IN
+                <foreach collection="years" item="year" open="(" close=")" separator=",">
+                    #{year}
+                </foreach>
             </if>
 
             <if test="key != null and key != ''">

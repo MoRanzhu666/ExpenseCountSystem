@@ -1,5 +1,6 @@
 package com.lyrics.ecs.handler;
 
+import com.lyrics.ecs.bean.exceptions.AuthException;
 import com.lyrics.ecs.bean.exceptions.BadRequestException;
 import com.lyrics.ecs.bean.po.ResultPo;
 import lombok.extern.slf4j.Slf4j;
@@ -26,6 +27,15 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(BadRequestException.class)
     @ResponseBody  // 返回JSON格式
     public ResultPo<Void> handleBusinessException(BadRequestException e) {
+        // 打印异常日志（级别为warn，因为是已知业务异常）
+        log.warn("业务异常：{}", e.getMessage());
+        // 返回异常信息（使用自定义状态码和消息）
+        return ResultPo.error(e.getCode(), e.getMessage());
+    }
+
+    @ExceptionHandler(AuthException.class)
+    @ResponseBody  // 返回JSON格式
+    public ResultPo<Void> handleAuthException(AuthException e) {
         // 打印异常日志（级别为warn，因为是已知业务异常）
         log.warn("业务异常：{}", e.getMessage());
         // 返回异常信息（使用自定义状态码和消息）

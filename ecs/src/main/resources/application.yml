@@ -42,9 +42,45 @@ spring:
   config:
     activate:
       on-profile: dev  # 旧写法：spring.profiles: dev → 新写法
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/expense_records?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: 123456
+
+#  data:
+#    redis:
+#      host: 127.0.0.1
+#      port: 6379             # Redis 端口
+#      password: 123456       # 如果 redis.conf 配置了 requirepass，就填这里
+#      database: 0            # 默认数据库，0-15
+#      timeout: 5000          # 连接超时时间（毫秒）
+#
+#      lettuce:
+#        pool:
+#          max-active: 8      # 最大连接数
+#          max-idle: 8        # 最大空闲连接
+#          min-idle: 0        # 最小空闲连接
+#          max-wait: -1ms     # 最大等待时间
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/expense_records?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: root
-    password: root
+    url: jdbc:mysql://192.168.101.10:3306/expense_records?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: remote_user
+    password: Wluoying666@
+
+  data:
+    redis:
+      host: 192.168.101.10
+      port: 6379             # Redis 端口
+      password: root       # 如果 redis.conf 配置了 requirepass，就填这里
+      database: 1            # 默认数据库，0-15
+      timeout: 5000          # 连接超时时间（毫秒）
+
+      lettuce:
+        pool:
+          max-active: 8      # 最大连接数
+          max-idle: 8        # 最大空闲连接
+          min-idle: 0        # 最小空闲连接
+          max-wait: -1ms     # 最大等待时间
+
 

@@ -5,9 +5,9 @@
 <mapper namespace="com.lyrics.ecs.mapper.DailyExpensesMapper">
 
 
-    <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.DailyExpensesPo"
-            parameterType="com.lyrics.ecs.bean.req.DailyExpensesReq">
-        SELECT * FROM daily_expenses
+    <select id="selectByCondition" resultType="com.lyrics.ecs.bean.po.expense.DailyExpensesPo"
+            parameterType="com.lyrics.ecs.bean.req.expense.DailyExpensesReq">
+        SELECT de.* FROM daily_expenses de
         <where>
             <!-- 基础条件：精确匹配或单独模糊查询（均从condition对象获取参数） -->
             <if test="condition.year != null">
@@ -47,5 +47,56 @@
             </if>
         </where>
         ORDER BY year DESC, month DESC, day DESC
+    </select>
+    <select id="selectRespByCondition" resultType="com.lyrics.ecs.bean.resp.expense.DailyExpensesResp"
+            parameterType="com.lyrics.ecs.bean.req.expense.DailyExpensesReq">
+        SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de
+        left join users u on u.id=de.create_by
+        left join users u2 on u2.id=de.update_by
+        <where>
+            <if test="condition.year != null">
+                AND year = #{condition.year}
+            </if>
+            <if test="condition.month != null">
+                AND month = #{condition.month}
+            </if>
+            <if test="condition.day != null">
+                AND day = #{condition.day}
+            </if>
+            <if test="condition.singleExpense != null">
+                AND single_expense LIKE CONCAT('%', #{condition.singleExpense}, '%')
+            </if>
+            <if test="condition.expenseReason != null and condition.expenseReason != ''">
+                AND expense_reason LIKE CONCAT('%', #{condition.expenseReason}, '%')
+            </if>
+            <if test="condition.expenseContent != null and condition.expenseContent != ''">
+                AND expense_content LIKE CONCAT('%', #{condition.expenseContent}, '%')
+            </if>
+            <if test="condition.dailyTotal != null">
+                AND daily_total LIKE CONCAT('%', #{condition.dailyTotal}, '%')
+            </if>
+
+            <if test="condition.key != null and condition.key != ''">
+                AND (
+                year LIKE CONCAT('%', #{condition.key}, '%')  <!-- 年份模糊匹配 -->
+                OR month LIKE CONCAT('%', #{condition.key}, '%')  <!-- 月份模糊匹配 -->
+                OR day LIKE CONCAT('%', #{condition.key}, '%')  <!-- 日期模糊匹配 -->
+                OR single_expense LIKE CONCAT('%', #{condition.key}, '%')  <!-- 单次金额模糊匹配 -->
+                OR expense_reason LIKE CONCAT('%', #{condition.key}, '%')  <!-- 花销原因模糊匹配 -->
+                OR expense_content LIKE CONCAT('%', #{condition.key}, '%')  <!-- 花销内容模糊匹配 -->
+                OR daily_total LIKE CONCAT('%', #{condition.key}, '%')  <!-- 当日合计模糊匹配 -->
+                )
+            </if>
+        </where>
+        ORDER BY year DESC, month DESC, day DESC, create_time desc, update_time desc
+    </select>
+    <select id="selectRespById" resultType="com.lyrics.ecs.bean.resp.expense.DailyExpensesResp"
+            parameterType="java.lang.String">
+        SELECT de.*, u.name create_by_name, u2.name update_by_name FROM daily_expenses de
+        left join users u on u.id=de.create_by
+        left join users u2 on u2.id=de.update_by
+        <where>
+            de.id=#{id}
+        </where>
     </select>
 </mapper>

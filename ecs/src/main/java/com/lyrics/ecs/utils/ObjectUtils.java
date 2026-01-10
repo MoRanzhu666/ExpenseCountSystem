@@ -6,6 +6,7 @@ import com.lyrics.ecs.bean.resp.system.CCodeResp;
 import org.springframework.beans.BeanUtils;
 
 import java.lang.reflect.Field;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -105,7 +106,7 @@ public class ObjectUtils {
     private static boolean isPrimitiveWrapper(Class<?> clazz) {
         return clazz == Integer.class || clazz == Long.class || clazz == Short.class ||
                 clazz == Double.class || clazz == Float.class || clazz == Boolean.class ||
-                clazz == Character.class || clazz == Byte.class;
+                clazz == Character.class || clazz == Byte.class || clazz == BigDecimal.class;
     }
 
     /**

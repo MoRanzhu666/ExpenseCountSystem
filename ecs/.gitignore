@@ -40,3 +40,4 @@ logs/
 **/*.log
 **/ecs/logs/
 **/ecs/logs/*.log
+.vscode/
